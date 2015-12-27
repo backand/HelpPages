@@ -6,7 +6,7 @@ var foreach = require('gulp-foreach');
 var file = require('gulp-file');
 var fs = require('fs');
 
-
+var baseUrl = "/HelpPages"
 var pages = new Array();
 gulp.task('default', function () {
     pages = readPagesFromConfig('origin/mkdocs.yml');
@@ -220,7 +220,7 @@ var readPagesFromConfig = function (filename) {
 
             }
             else if (l1.length == 3) {
-                pages[l1[0].trim().toLowerCase()] = {'parentMenu': l1[1].replace(' ', ''), 'title': l1[2].trimLeft(), 'url': "/en/latest/" + l1[0].trim().toLowerCase().replace(".md", ".html") };
+                pages[l1[0].trim().toLowerCase()] = {'parentMenu': l1[1].replace(' ', ''), 'title': l1[2].trimLeft(), 'url': baseUrl + "/en/latest/" + l1[0].trim().toLowerCase().replace(".md", ".html") };
             }
         }
     }

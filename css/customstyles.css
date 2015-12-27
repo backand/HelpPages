@@ -935,3 +935,9 @@ a.no_icon:after {
     content:"" !important;
     padding-left: 0;
 }
+
+
+ .navbar{
+     background:url({{ "/common_images/sec-bg.jpg" | prepend: site.baseurl | prepend: site.url }}) no-repeat;
+     background-size:cover;
+ }

@@ -1,11 +1,4 @@
 <!-- Navigation -->
-<style>
-    .navbar{
-        background:url(/common_images/sec-bg.jpg) no-repeat;
-        background-size:cover;
-    }
-</style>
-
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container topnavlinks">
         <div class="navbar-header">
@@ -17,9 +10,9 @@
             </button>
 
 
-            <a class="fa fa-home fa-lg navbar-brand" href="home.html">&nbsp;<span class="projectTitle"><img src="/common_images/Backand-logo.png"/> {{site.topnav_title}}</span></a>
-
-        </div>
+            <a class="fa fa-home fa-lg navbar-brand" href="home.html">&nbsp;<span class="projectTitle">
+                <img src="{{ "/common_images/Backand-logo.png" | prepend: site.baseurl | prepend: site.url }}"/> {{site.topnav_title}}</span></a>
+            </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
