@@ -937,7 +937,4 @@ a.no_icon:after {
 }
 
 
- .navbar{
-     background:url({{ "/common_images/sec-bg.jpg" | prepend: site.baseurl | prepend: site.url }}) no-repeat;
-     background-size:cover;
- }
+
