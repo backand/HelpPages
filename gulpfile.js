@@ -55,6 +55,7 @@ gulp.task('concat sidebar', function (cb) {
 
     return gulp.src(srcPattern)
         .pipe(foreach(function (stream, file) {
+                console.log(file.path);
                 interestinPathPart = file.path.substr(file.path.indexOf('origin/docs') + 12).toLowerCase();
                 pagesDetail = pages[interestinPathPart];
 
@@ -90,6 +91,9 @@ gulp.task('concat sidebar', function (cb) {
                      finalFileContent = addLine(finalFileContent, 2, "  type: frontmatter");
                      //contents.files is an array
 
+                }
+                else{
+                    console.log("can't find page for " + interestinPathPart)
                 }
                 return gulp.src(srcPattern)
 
