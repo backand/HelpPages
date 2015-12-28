@@ -1,16 +1,15 @@
 <style>
-    .navbar {
-        background: url({{ "/common_images/sec-bg.jpg" | prepend: site.baseurl | prepend: site.url }}) no-repeat;
-        background-size: cover;
-    }
+.navbar{
+background:url({{ "/common_images/sec-bg.jpg" | prepend: site.baseurl | prepend: site.url }}) no-repeat;
+background-size:cover;
+}
 </style>
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container topnavlinks">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -18,13 +17,9 @@
             </button>
 
 
-            <a class="navbar-brand" href="home.html" class="projectTitle">
-                <a href="https://www.backand.com">
-                    <img src="{{ "/common_images/Backand-logo.png" | prepend: site.baseurl | prepend: site.url }}"/>
-                    {{site.topnav_title}}</span>
-                </a>
-            </a>
-        </div>
+            <a class="fa fa-home fa-lg navbar-brand" href="home.html">&nbsp;<span class="projectTitle">
+                <img src="{{ "/common_images/Backand-logo.png" | prepend: site.baseurl | prepend: site.url }}"/> {{site.topnav_title}}</span></a>
+            </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
@@ -33,9 +28,7 @@
 
                 {% for entry in topnav %}
                 {% for subcategory in entry.subcategories %}
-                {% if subcategory.audience contains audience and subcategory.product contains product and
-                subcategory.platform contains platform and subcategory.version contains version and subcategory.output
-                contains "web" %}
+                {% if subcategory.audience contains audience and subcategory.product contains product and subcategory.platform contains platform and subcategory.version contains version and subcategory.output contains "web" %}
                 {% if subcategory.external_url %}
                 <li><a href="{{subcategory.external_url}}" target="_blank">{{subcategory.title}}</a></li>
                 {% elsif page.url == subcategory.url %}
@@ -54,16 +47,11 @@
                 <li class="dropdown">
                     {% for entry in topnav_dropdowns %}
                     {% for subcategory in entry.subcategories %}
-                    {% if subcategory.audience contains audience and subcategory.product contains product and
-                    subcategory.platform contains platform and subcategory.version contains version and
-                    subcategory.output contains "web" %}
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ subcategory.title }}<b
-                            class="caret"></b></a>
+                    {% if subcategory.audience contains audience and subcategory.product contains product and subcategory.platform contains platform and subcategory.version contains version and subcategory.output contains "web" %}
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ subcategory.title }}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         {% for subitem in subcategory.items %}
-                        {% if subitem.audience contains audience and subitem.product contains product and
-                        subitem.platform contains platform and subcategory.version contains version and subitem.output
-                        contains "web" %}
+                        {% if subitem.audience contains audience and subitem.product contains product and subitem.platform contains platform and subcategory.version contains version and subitem.output contains "web" %}
                         {% if subitem.external_url %}
                         <li><a href="{{subitem.external_url}}" target="_blank">{{subitem.title}}</a></li>
                         {% elsif page.url contains subitem.url %}
@@ -83,7 +71,7 @@
 
                 <!-- special insertion -->
 
-                {% if site.project == "mydoc_designers" or site.project == "mydoc_writers" %}
+               {% if site.project == "mydoc_designers" or site.project == "mydoc_writers" %}
                 {% comment %}
                 {% include custom/mydoc/custom_menu.html %}
                 {% endcomment %}
@@ -94,37 +82,25 @@
                 <li>
                     <!-- start search -->
                     <div id="search-demo-container">
-                        <input type="text" id="search-input"
-                               placeholder="{{site.data.strings.search_placeholder_text}}">
+                        <input type="text" id="search-input" placeholder="{{site.data.strings.search_placeholder_text}}">
                         <ul id="results-container"></ul>
                     </div>
 
-                    <script src="{{ "
-                    /js/jekyll-search.js" | prepend: site.baseurl | prepend: site.url }}"
-                    type="text/javascript"></script>
-                    <
-                    script
-                    type = "text/javascript" >
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: '{{ "/search.json" | prepend: site.baseurl | prepend: site.url }}',
-                                searchResultTemplate: '<li><a href="{url}" title="{{page.title | replace: "'", "
-                    \
-                    "}}" > {title} < /a></
-                    li > ',
-                    noResultsText: '{{site.data.strings.search_no_results_text}}',
-                            limit
-                    :
-                    10,
-                            fuzzy
-                    :
-                    true,
-                    })
+                    <script src="{{ "/js/jekyll-search.js" | prepend: site.baseurl | prepend: site.url }}" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        SimpleJekyllSearch.init({
+                            searchInput: document.getElementById('search-input'),
+                            resultsContainer: document.getElementById('results-container'),
+                            dataSource: '{{ "/search.json" | prepend: site.baseurl | prepend: site.url }}',
+                            searchResultTemplate: '<li><a href="{url}" title="{{page.title | replace: "'", "\"}}">{title}</a></li>',
+                        noResultsText: '{{site.data.strings.search_no_results_text}}',
+                                limit: 10,
+                                fuzzy: true,
+                        })
                     </script>
                     <!-- end search -->
                 </li>
-                {% comment %}
+            {% comment %}
                 {% include frameescape.html %}
                 {% endcomment %}
         </div>
