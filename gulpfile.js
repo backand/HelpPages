@@ -251,6 +251,8 @@ var readPagesFromConfig = function (filename) {
 
             }
             else if (l1.length == 3) {
+                console.log("insert", l1[0].trim().toLowerCase());
+
                 pages[l1[0].trim().toLowerCase()] = {
                     'parentMenu': l1[1].replace(' ', ''),
                     'title': l1[2].trimLeft(),
