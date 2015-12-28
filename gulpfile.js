@@ -25,13 +25,18 @@ gulp.task('default', function () {
                     //console.log(file);
 
                     // #2 change links from .md to .html
-                    contents = contents.replace(/.md/g,'/index.html')
+                    contents = contents.replace(/\w+.md/g,function(a){
+                       // console.log(a);
+                        a = a.replace(".md", "");
+
+                        return '../' + a + '/index.html';
+                    })
 
                     // #3 replace tab by four spaces
                     contents = contents.replace(/\t/g,'    ')
 
                     // #4 replace '\' with two '\\'
-                    contents = contents.replace(/\\/g,'&#92;')
+                    contents = contents.replace(/\\/g,'\\\\')
 
                     return header + contents;
                 }
@@ -45,66 +50,75 @@ gulp.task('default', function () {
 });
 
 var finalFileContent = '';
+var menu = new Array();
 
 gulp.task('concat sidebar', function (cb) {
     pages = readPagesFromConfig('origin/mkdocs.yml');
 
-    var knownEntries = [''];
+    //var knownEntries = [''];
 
-    finalFileContent = addHeader();
+
 
     return gulp.src(srcPattern)
         .pipe(foreach(function (stream, file) {
-                console.log(file.path);
                 interestinPathPart = file.path.substr(file.path.indexOf('origin/docs') + 12).toLowerCase();
                 pagesDetail = pages[interestinPathPart];
 
                 if (pagesDetail !== undefined) {
                     // first time this title appear
-                    if (knownEntries.indexOf(pagesDetail.parentMenu) == -1) {
-                        knownEntries.push(pagesDetail.parentMenu);
+                    tempFileContent = "";
 
-                        console.log(pagesDetail.parentMenu);
+
+                    if (menu[pagesDetail.parentMenu] === undefined) {
                         // add title
-                        finalFileContent = addLine(finalFileContent, 0, "");
-                        finalFileContent = addLine(finalFileContent, 1, "- title: " + pagesDetail.parentMenu);
-                        finalFileContent = addLine(finalFileContent, 1, "  audience: writers, designers");
-                        finalFileContent = addLine(finalFileContent, 1, "  platform: all");
-                        finalFileContent = addLine(finalFileContent, 1, "  product: all");
-                        finalFileContent = addLine(finalFileContent, 1, "  version: all");
-                        finalFileContent = addLine(finalFileContent, 1, "  output: web");
-                        finalFileContent = addLine(finalFileContent, 1, "  items:");
+                        tempFileContent = addLine(tempFileContent, 0, "");
+                        tempFileContent = addLine(tempFileContent, 1, "- title: " + pagesDetail.parentMenu);
+                        tempFileContent = addLine(tempFileContent, 1, "  audience: writers, designers");
+                        tempFileContent = addLine(tempFileContent, 1, "  platform: all");
+                        tempFileContent = addLine(tempFileContent, 1, "  product: all");
+                        tempFileContent = addLine(tempFileContent, 1, "  version: all");
+                        tempFileContent = addLine(tempFileContent, 1, "  output: web");
+                        tempFileContent = addLine(tempFileContent, 1, "  items:");
+
+
+                        menu[pagesDetail.parentMenu] = tempFileContent;
+                        tempFileContent = "";
                     }
 
                     // var titles =
-
-
                      // add second part
 
-                     finalFileContent = addLine(finalFileContent, 2, "- title: " + pagesDetail.title);
-                     finalFileContent = addLine(finalFileContent, 2, "  url: " + pagesDetail.url);
-                     finalFileContent = addLine(finalFileContent, 2, "  audience: writers, designers");
-                     finalFileContent = addLine(finalFileContent, 2, "  platform: all");
-                     finalFileContent = addLine(finalFileContent, 2, "  product: all");
-                     finalFileContent = addLine(finalFileContent, 2, "  version: all");
-                     finalFileContent = addLine(finalFileContent, 2, "  output: web");
-                     finalFileContent = addLine(finalFileContent, 2, "  type: frontmatter");
-                     //contents.files is an array
+                     tempFileContent = addLine(tempFileContent, 2, "- title: " + pagesDetail.title);
+                     tempFileContent = addLine(tempFileContent, 2, "  url: " + pagesDetail.url);
+                     tempFileContent = addLine(tempFileContent, 2, "  audience: writers, designers");
+                     tempFileContent = addLine(tempFileContent, 2, "  platform: all");
+                     tempFileContent = addLine(tempFileContent, 2, "  product: all");
+                     tempFileContent = addLine(tempFileContent, 2, "  version: all");
+                     tempFileContent = addLine(tempFileContent, 2, "  output: web");
+                     tempFileContent = addLine(tempFileContent, 2, "  type: frontmatter");
+
+                    menu[pagesDetail.parentMenu] += tempFileContent;
+                    //contents.files is an array
 
                 }
                 else{
                     console.log("can't find page for " + interestinPathPart)
                 }
                 return gulp.src(srcPattern)
-
             }
-        ))
-
-
-    //.pipe(gulp.dest('dist'));
+        ));
 });
 
-gulp.task('sidebar', ['concat sidebar'], function () {
+gulp.task('save menu', ['concat sidebar'], function(){
+    finalFileContent = addHeader();
+    for(var k in menu){
+        finalFileContent += menu[k];
+    }
+
+
+})
+
+gulp.task('sidebar', ['save menu'], function () {
     return file('mydoc_sidebar.yml', finalFileContent, {src: true}).pipe(gulp.dest("_data/mydoc/"));
 });
 
@@ -210,7 +224,6 @@ var readPagesFromConfig = function (filename) {
     pages = new Array();
     for (i in array) {
         line = array[i];
-        console.log(line);
         if (line.indexOf('pages:') == 0) { // mean startWith
             pagesTagFound = true;
             continue;

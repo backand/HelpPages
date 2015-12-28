@@ -52,16 +52,16 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Custom Actions
-      url: /HelpPages/en/latest/apidocs/customactions/index.html
+    - title: NOSQL Query Language
+      url: /HelpPages/en/latest/apidocs/nosql_query_language/index.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web
       type: frontmatter
-    - title: Queries
-      url: /HelpPages/en/latest/apidocs/queries/index.html
+    - title: Custom Actions
+      url: /HelpPages/en/latest/apidocs/customactions/index.html
       audience: writers, designers
       platform: all
       product: all
@@ -76,16 +76,16 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Security Concepts
-      url: /HelpPages/en/latest/apidocs/security/index.html
+    - title: Queries
+      url: /HelpPages/en/latest/apidocs/queries/index.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web
       type: frontmatter
-    - title: NOSQL Query Language
-      url: /HelpPages/en/latest/apidocs/nosql_query_language/index.html
+    - title: Security Concepts
+      url: /HelpPages/en/latest/apidocs/security/index.html
       audience: writers, designers
       platform: all
       product: all
@@ -173,78 +173,6 @@ entries:
       output: web
       type: frontmatter
 
-  - title: Common Use Cases
-    audience: writers, designers
-    platform: all
-    product: all
-    version: all
-    output: web
-    items:
-    - title: What would you like to do?
-      url: /HelpPages/en/latest/what_would_you_like_to_do/index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: REST API Playground
-      url: /HelpPages/en/latest/what_would_you_like_to_do/rest/index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Custom Actions
-      url: /HelpPages/en/latest/what_would_you_like_to_do/actions/index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Database Setup & Configuration
-      url: /HelpPages/en/latest/what_would_you_like_to_do/database/index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Internationalization
-      url: /HelpPages/en/latest/what_would_you_like_to_do/i18n/index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Retrieving Data
-      url: /HelpPages/en/latest/what_would_you_like_to_do/retrieve_data/index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Rolebased Security Configuration
-      url: /HelpPages/en/latest/what_would_you_like_to_do/security/index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Integrating with Third Parties
-      url: /HelpPages/en/latest/what_would_you_like_to_do/third_party/index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-
   - title: Scenarios
     audience: writers, designers
     platform: all
@@ -316,6 +244,14 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Simple Web App with REST API
+      url: /HelpPages/en/latest/scenarios/simple_web/index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
     - title: Stripe Integration
       url: /HelpPages/en/latest/scenarios/stripe/index.html
       audience: writers, designers
@@ -332,8 +268,72 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Simple Web App with REST API
-      url: /HelpPages/en/latest/scenarios/simple_web/index.html
+
+  - title: Common Use Cases
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web
+    items:
+    - title: What would you like to do?
+      url: /HelpPages/en/latest/what_would_you_like_to_do/index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Custom Actions
+      url: /HelpPages/en/latest/what_would_you_like_to_do/actions/index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Database Setup & Configuration
+      url: /HelpPages/en/latest/what_would_you_like_to_do/database/index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Internationalization
+      url: /HelpPages/en/latest/what_would_you_like_to_do/i18n/index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: REST API Playground
+      url: /HelpPages/en/latest/what_would_you_like_to_do/rest/index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Retrieving Data
+      url: /HelpPages/en/latest/what_would_you_like_to_do/retrieve_data/index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Rolebased Security Configuration
+      url: /HelpPages/en/latest/what_would_you_like_to_do/security/index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Integrating with Third Parties
+      url: /HelpPages/en/latest/what_would_you_like_to_do/third_party/index.html
       audience: writers, designers
       platform: all
       product: all
