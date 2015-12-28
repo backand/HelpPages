@@ -15,7 +15,7 @@ gulp.task('default', function () {
         .pipe(modify({
             fileModifier: function (file, contents) {
                 // #1 add title to every page
-                interestinPathPart = file.path.substr(file.path.indexOf('help/docs') + ('help/docs'.length + 1)).toLowerCase();
+                interestinPathPart = file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
                 pagesDetail = pages[interestinPathPart];
 
                 if (pagesDetail !== undefined) {
@@ -25,18 +25,18 @@ gulp.task('default', function () {
                     //console.log(file);
 
                     // #2 change links from .md to .html
-                    contents = contents.replace(/\w+.md/g,function(a){
-                       // console.log(a);
+                    contents = contents.replace(/\w+.md/g, function (a) {
+                        // console.log(a);
                         a = a.replace(".md", "");
 
                         return '../' + a + '/index.html';
                     })
 
                     // #3 replace tab by four spaces
-                    contents = contents.replace(/\t/g,'    ')
+                    contents = contents.replace(/\t/g, '    ')
 
                     // #4 replace '\' with two '\\'
-                    contents = contents.replace(/\\/g,'\\\\')
+                    contents = contents.replace(/\\/g, '\\\\')
 
                     return header + contents;
                 }
@@ -58,10 +58,9 @@ gulp.task('concat sidebar', function (cb) {
     //var knownEntries = [''];
 
 
-
     return gulp.src(srcPattern)
         .pipe(foreach(function (stream, file) {
-                interestinPathPart = file.path.substr(file.path.indexOf('origin/docs') + 12).toLowerCase();
+                interestinPathPart = file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
                 pagesDetail = pages[interestinPathPart];
 
                 if (pagesDetail !== undefined) {
@@ -86,22 +85,22 @@ gulp.task('concat sidebar', function (cb) {
                     }
 
                     // var titles =
-                     // add second part
+                    // add second part
 
-                     tempFileContent = addLine(tempFileContent, 2, "- title: " + pagesDetail.title);
-                     tempFileContent = addLine(tempFileContent, 2, "  url: " + pagesDetail.url);
-                     tempFileContent = addLine(tempFileContent, 2, "  audience: writers, designers");
-                     tempFileContent = addLine(tempFileContent, 2, "  platform: all");
-                     tempFileContent = addLine(tempFileContent, 2, "  product: all");
-                     tempFileContent = addLine(tempFileContent, 2, "  version: all");
-                     tempFileContent = addLine(tempFileContent, 2, "  output: web");
-                     tempFileContent = addLine(tempFileContent, 2, "  type: frontmatter");
+                    tempFileContent = addLine(tempFileContent, 2, "- title: " + pagesDetail.title);
+                    tempFileContent = addLine(tempFileContent, 2, "  url: " + pagesDetail.url);
+                    tempFileContent = addLine(tempFileContent, 2, "  audience: writers, designers");
+                    tempFileContent = addLine(tempFileContent, 2, "  platform: all");
+                    tempFileContent = addLine(tempFileContent, 2, "  product: all");
+                    tempFileContent = addLine(tempFileContent, 2, "  version: all");
+                    tempFileContent = addLine(tempFileContent, 2, "  output: web");
+                    tempFileContent = addLine(tempFileContent, 2, "  type: frontmatter");
 
                     menu[pagesDetail.parentMenu] += tempFileContent;
                     //contents.files is an array
 
                 }
-                else{
+                else {
                     console.log("can't find page for " + interestinPathPart)
                 }
                 return gulp.src(srcPattern)
@@ -109,9 +108,9 @@ gulp.task('concat sidebar', function (cb) {
         ));
 });
 
-gulp.task('save menu', ['concat sidebar'], function(){
+gulp.task('save menu', ['concat sidebar'], function () {
     finalFileContent = addHeader();
-    for(var k in menu){
+    for (var k in menu) {
         finalFileContent += menu[k];
     }
 
@@ -238,11 +237,15 @@ var readPagesFromConfig = function (filename) {
             l1 = l1.split(',');
 
             if (l1.length == 2) { // two parts
-                pages[l1[0].trim().toLowerCase()] = {'parentMenu' : '' , 'title': l1[1].replace(' ', '')}; // remove first space char
+                pages[l1[0].trim().toLowerCase()] = {'parentMenu': '', 'title': l1[1].replace(' ', '')}; // remove first space char
 
             }
             else if (l1.length == 3) {
-                pages[l1[0].trim().toLowerCase()] = {'parentMenu': l1[1].replace(' ', ''), 'title': l1[2].trimLeft(), 'url': baseUrl + "/en/latest/" + l1[0].trim().toLowerCase().replace(".md", ".html") };
+                pages[l1[0].trim().toLowerCase()] = {
+                    'parentMenu': l1[1].replace(' ', ''),
+                    'title': l1[2].trimLeft(),
+                    'url': baseUrl + "/en/latest/" + l1[0].trim().toLowerCase().replace(".md", ".html")
+                };
             }
         }
     }
