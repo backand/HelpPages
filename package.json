@@ -10,8 +10,7 @@
     "gulp-file": "^0.2.0",
     "gulp-foreach": "^0.1.0",
     "gulp-modify": "^0.1.1",
-    "bower" : "latest",
-    "bower-cli": "latest"
+    "bower" : "latest"
   },
   "devDependencies": {},
   "scripts": {
