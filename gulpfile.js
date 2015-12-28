@@ -24,10 +24,13 @@ gulp.task('default', function () {
                     //console.log(file);
 
                     // #2 change links from .md to .html
-                    contents = contents.replace(/.md/g,'.html')
+                    contents = contents.replace(/.md/g,'/index.html')
 
                     // #3 replace tab by four spaces
                     contents = contents.replace(/\t/g,'    ')
+
+                    // #4 replace '\' with two '\\'
+                    contents = contents.replace(/\\/g,'&#92;')
 
                     return header + contents;
                 }

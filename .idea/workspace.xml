@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9af11738-a999-4e53-8c75-6fc4ee5a01f5" name="Default" comment="" />
+    <list default="true" id="9af11738-a999-4e53-8c75-6fc4ee5a01f5" name="Default" comment="fix css path">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/apidocs/apidescription.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/apidocs/customactions.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/apidocs/nosql_query_language.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/apidocs/queries.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/apidocs/realtime.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/apidocs/security.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/getting_started/hosting.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/getting_started/log.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/getting_started/objects.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/getting_started/queries.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/getting_started/quick_reference.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/getting_started/sdk.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/getting_started/security_auth.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/getting_started/settings.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/PayPal.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/Segment.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/amazon.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/ionic.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/mailgun.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/mandrillapp.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/simple_todo.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/simple_web.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/stripe.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/scenarios/todo_users.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/actions.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/database.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/i18n.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/rest.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/retrieve_data.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/security.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/third_party.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/en/latest/index.md" afterPath="$PROJECT_DIR$/en/latest/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/en/latest/apidocs/index.md" afterPath="$PROJECT_DIR$/en/latest/apidocs/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/en/latest/getting_started/index.md" afterPath="$PROJECT_DIR$/en/latest/getting_started/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/en/latest/scenarios/index.md" afterPath="$PROJECT_DIR$/en/latest/scenarios/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/index.md" afterPath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/origin/docs/index.md" afterPath="$PROJECT_DIR$/origin/docs/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/origin/docs/apidocs/index.md" afterPath="$PROJECT_DIR$/origin/docs/apidocs/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/origin/docs/getting_started/index.md" afterPath="$PROJECT_DIR$/origin/docs/getting_started/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/origin/docs/scenarios/index.md" afterPath="$PROJECT_DIR$/origin/docs/scenarios/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/index.md" afterPath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/mydoc/mydoc_sidebar.yml" afterPath="$PROJECT_DIR$/_data/mydoc/mydoc_sidebar.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/titlepage.html" afterPath="$PROJECT_DIR$/titlepage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="jekyll2.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,58 +68,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topnav.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/topnav.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75">
-              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queries.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/origin/docs/apidocs/queries.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0689654">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="security.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/en/latest/apidocs/security.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sec-bg.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common_images/sec-bg.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Backand-logo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common_images/Backand-logo.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config_designers.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configs/mydoc/config_designers.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state vertical-scroll-proportion="-13.448276">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="amazon.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/en/latest/scenarios/amazon.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -81,50 +97,63 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53206">
-              <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.5506608">
+              <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
               <folding>
-                <element signature="e#3909#4013#0" expanded="false" />
-                <element signature="e#4069#4285#0" expanded="false" />
-                <element signature="e#4326#4829#0" expanded="false" />
-                <element signature="e#4411#4801#0" expanded="false" />
-                <element signature="e#4466#4544#0" expanded="false" />
-                <element signature="e#4569#4647#0" expanded="false" />
-                <element signature="e#4677#4767#0" expanded="false" />
-                <element signature="e#4859#6104#0" expanded="false" />
+                <element signature="e#4171#4275#0" expanded="false" />
+                <element signature="e#4331#4547#0" expanded="false" />
+                <element signature="e#4588#5091#0" expanded="false" />
+                <element signature="e#4673#5063#0" expanded="false" />
+                <element signature="e#4728#4806#0" expanded="false" />
+                <element signature="e#4831#4909#0" expanded="false" />
+                <element signature="e#4939#5029#0" expanded="false" />
+                <element signature="e#5121#6366#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/sidebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding>
-                <element signature="n#script#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="e#154#1785#0" expanded="false" />
-              </folding>
-            </state>
+      <file leaf-file-name="PayPal.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/en/latest/scenarios/PayPal.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mydoc_3_multibuild_web.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydoc_3_multibuild_web.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.888889">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="8.275862">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customstyles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/customstyles.css">
+      <file leaf-file-name="titlepage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/titlepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.37037">
-              <caret line="623" column="0" selection-start-line="623" selection-start-column="0" selection-end-line="623" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.75">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower_components/simple-jekyll-search/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.2758621">
+              <caret line="230" column="3" selection-start-line="230" selection-start-column="3" selection-end-line="230" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple_search_filter.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_plugins/simple_search_filter.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.1111112">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -139,12 +168,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_includes/head.html" />
-        <option value="$PROJECT_DIR$/search.json" />
-        <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/gulp.js" />
         <option value="$PROJECT_DIR$/node_modules/gulp-concat-util/src/index.js" />
         <option value="$PROJECT_DIR$/myDoc/index.md" />
@@ -156,10 +185,18 @@
         <option value="$PROJECT_DIR$/tocpage.html" />
         <option value="$PROJECT_DIR$/_includes/toc.html" />
         <option value="$PROJECT_DIR$/configs/mydoc/config_designers.yml" />
-        <option value="$PROJECT_DIR$/_includes/topnav.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_includes/sidebar.html" />
+        <option value="$PROJECT_DIR$/_includes/head_print.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_includes/head.html" />
+        <option value="$PROJECT_DIR$/js/customscripts.js" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/css/customstyles.css" />
+        <option value="$PROJECT_DIR$/_includes/topnav.html" />
+        <option value="$PROJECT_DIR$/search.json" />
+        <option value="$PROJECT_DIR$/_plugins/simple_search_filter.rb" />
+        <option value="$PROJECT_DIR$/titlepage.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
       </list>
     </option>
@@ -167,17 +204,22 @@
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
   </component>
   <component name="NamedScopeManager">
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2464" />
+    <option name="x" value="1440" />
     <option name="y" value="-486" />
-    <option name="width" value="1024" />
+    <option name="width" value="2048" />
     <option name="height" value="1129" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -218,124 +260,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="origin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="origin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="origin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apidocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mydoc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common_images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jekyll2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,6 +314,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <list size="1">
@@ -408,29 +342,191 @@
       <option name="number" value="Default" />
       <updated>1450791681267</updated>
     </task>
+    <task id="LOCAL-00001" summary="fix css">
+      <created>1451223202775</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1451223202775</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix css path">
+      <created>1451223241610</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1451223241610</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix css path">
+      <created>1451223532342</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1451223532342</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix css path">
+      <created>1451223747853</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1451223747854</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix css path">
+      <created>1451223801803</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1451223801803</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix css path">
+      <created>1451226560032</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1451226560032</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix css path">
+      <created>1451226770509</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1451226770509</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix css path">
+      <created>1451226884800</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1451226884800</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix css path">
+      <created>1451227315465</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1451227315465</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix css path">
+      <created>1451227422405</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1451227422405</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix css path">
+      <created>1451227498450</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1451227498450</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix css path">
+      <created>1451227668821</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1451227668821</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix css path">
+      <created>1451227844194</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1451227844194</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix css path">
+      <created>1451227980109</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1451227980109</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix css path">
+      <created>1451228181423</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1451228181423</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix css path">
+      <created>1451228336118</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1451228336118</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix css path">
+      <created>1451228462875</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1451228462875</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix css path">
+      <created>1451228674604</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1451228674604</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix css path">
+      <created>1451228925485</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1451228925485</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix css path">
+      <created>1451230401343</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1451230401343</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix css path">
+      <created>1451230846247</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1451230846247</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix css path">
+      <created>1451231072488</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1451231072488</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix css path">
+      <created>1451231177674</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1451231177674</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix css path">
+      <created>1451295835080</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1451295835080</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix css path">
+      <created>1451297140465</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1451297140465</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="2464" y="-486" width="1024" height="1129" extended-state="6" />
-    <editor active="true" />
+    <frame x="1440" y="-486" width="2048" height="1129" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26756495" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3205005" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26615235" sideWeight="0.48643315" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297975" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33266333" sideWeight="0.48248643" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32402793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39868048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16033547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31629702" sideWeight="0.5214603" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31629702" sideWeight="0.4785397" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39826423" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -444,6 +540,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix css" />
+    <MESSAGE value="fix css path" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix css path" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -451,217 +552,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/title-checker.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.125">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/origin/docs/getting_started/hosting.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/origin/docs/getting_started/log.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/origin/docs/getting_started/queries.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/gulp-concat-util/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.537037">
-          <caret line="125" column="2" selection-start-line="125" selection-start-column="2" selection-end-line="125" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydoc_4_publish.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydoc_all.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prince-file-list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/strings.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/terms.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/alerts.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/mydoc/mydoc_sidebar_bak.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.704852">
-          <caret line="579" column="38" selection-start-line="579" selection-start-column="38" selection-end-line="579" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/origin/docs/apidocs/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/origin/mkdocs.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/mydoc/mydoc_topnav.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/archive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.875">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default_print.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/none.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.875">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/toc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.038462">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.navgoco.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10445683">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,19 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tocpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/toc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.5294118">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,25 +583,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/en/latest/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/en/latest/scenarios/amazon.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sitemap.xml">
@@ -727,19 +600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/mydoc/mydoc_sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/mydoc/mydoc_glossary.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17699115">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,15 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.888889">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/customstyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.37037">
-          <caret line="623" column="0" selection-start-line="623" selection-start-column="0" selection-end-line="623" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,10 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="n#script#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#154#1785#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,46 +682,241 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_layouts/none.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="15" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tocpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydoc_2_multibuild_pdf.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default_print.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head_print.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="95" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.333333">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/mydoc/mydoc_sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+          <folding>
+            <marker date="1451298702000" expanded="true" signature="-1:-1" placeholder="items:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/customscripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.987342">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.625">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydoc_1_multiserve_pdf.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/topnav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/origin/docs/apidocs/queries.md">
+    <entry file="file://$PROJECT_DIR$/title-checker.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0689654">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/customstyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="939" column="0" selection-start-line="939" selection-start-column="0" selection-end-line="939" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jekyll-search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/printstyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.275862">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/en/latest/apidocs/security.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.448276">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/en/latest/scenarios/PayPal.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.275862">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/en/latest/scenarios/amazon.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/simple-jekyll-search/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2758621">
+          <caret line="230" column="3" selection-start-line="230" selection-start-column="3" selection-end-line="230" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_plugins/simple_search_filter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1111112">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/titlepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53206">
-          <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.5506608">
+          <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
           <folding>
-            <element signature="e#3909#4013#0" expanded="false" />
-            <element signature="e#4069#4285#0" expanded="false" />
-            <element signature="e#4326#4829#0" expanded="false" />
-            <element signature="e#4411#4801#0" expanded="false" />
-            <element signature="e#4466#4544#0" expanded="false" />
-            <element signature="e#4569#4647#0" expanded="false" />
-            <element signature="e#4677#4767#0" expanded="false" />
-            <element signature="e#4859#6104#0" expanded="false" />
+            <element signature="e#4171#4275#0" expanded="false" />
+            <element signature="e#4331#4547#0" expanded="false" />
+            <element signature="e#4588#5091#0" expanded="false" />
+            <element signature="e#4673#5063#0" expanded="false" />
+            <element signature="e#4728#4806#0" expanded="false" />
+            <element signature="e#4831#4909#0" expanded="false" />
+            <element signature="e#4939#5029#0" expanded="false" />
+            <element signature="e#5121#6366#0" expanded="false" />
           </folding>
         </state>
       </provider>
