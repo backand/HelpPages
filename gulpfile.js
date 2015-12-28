@@ -15,7 +15,7 @@ var mkdocsPath = 'source/mkdocs.yml';
 function extracteIntrestingPart(file) {
     return file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
 }
-gulp.task('default', function (mkdocsPath) {
+gulp.task('default', function () {
     pages = readPagesFromConfig(mkdocsPath);
     gulp.src(srcPattern)
         .pipe(modify({
