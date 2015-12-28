@@ -10,7 +10,7 @@ var isWin = /^win/.test(process.platform);
 var baseUrl = "/HelpPages"
 var pages = new Array();
 var srcPattern = 'source/docs/*/{,*/}*.md';
-var mkdocsPath = 'source/docs/mkdocs.yml';
+var mkdocsPath = 'source/mkdocs.yml';
 
 function extracteIntrestingPart(file) {
     return file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
