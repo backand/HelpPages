@@ -1,50 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9af11738-a999-4e53-8c75-6fc4ee5a01f5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/apidocs/apidescription/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/apidocs/customactions/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/apidocs/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/apidocs/nosql_query_language/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/apidocs/queries/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/apidocs/realtime/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/apidocs/security/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/hosting/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/log/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/objects/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/queries/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/quick_reference/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/quick_reference/quick_reference.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/sdk/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/security_auth/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/getting_started/settings/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/amazon/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/ionic/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/mailgun/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/mandrillapp/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/paypal/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/segment/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/simple_todo/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/simple_web/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/stripe/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/scenarios/todo_users/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/actions/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/database/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/i18n/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/rest/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/retrieve_data/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/security/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/latest/what_would_you_like_to_do/third_party/index.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/del/package.json" afterPath="$PROJECT_DIR$/node_modules/del/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-concat-util/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-concat-util/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-file/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-file/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-foreach/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-foreach/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-modify/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-modify/package.json" />
+    <list default="true" id="9af11738-a999-4e53-8c75-6fc4ee5a01f5" name="Default" comment="fix css path">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/apidocs/apidescription/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/apidocs/customactions/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/apidocs/nosql_query_language/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/apidocs/queries/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/apidocs/realtime/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/apidocs/security/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/getting_started/hosting/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/getting_started/log/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/getting_started/objects/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/getting_started/queries/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/getting_started/quick_reference/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/getting_started/sdk/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/getting_started/security_auth/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/getting_started/settings/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/amazon/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/ionic/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/mailgun/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/mandrillapp/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/paypal/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/segment/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/simple_todo/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/simple_web/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/stripe/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/scenarios/todo_users/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/actions/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/database/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/i18n/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/rest/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/retrieve_data/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/security/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/origin/docs/what_would_you_like_to_do/third_party/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jekyll2.iml" afterPath="$PROJECT_DIR$/.idea/jekyll2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jekyll2.iws" />
@@ -66,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="topnav.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="topnav.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/topnav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8235295">
-              <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.32967034">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,18 +68,28 @@
       <file leaf-file-name="mydoc_1_multiserve_pdf.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydoc_1_multiserve_pdf.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33047736">
+            <state vertical-scroll-proportion="-11.25">
               <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toc.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/toc.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,18 +115,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
+            <state vertical-scroll-proportion="0.0">
               <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mydoc_2_multibuild_pdf.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydoc_2_multibuild_pdf.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.111111">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -146,7 +135,7 @@
       <file leaf-file-name="titlepage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/titlepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
+            <state vertical-scroll-proportion="0.0">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
@@ -166,7 +155,7 @@
       <file leaf-file-name="tocpage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tocpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25">
+            <state vertical-scroll-proportion="0.0">
               <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
               <folding />
             </state>
@@ -210,11 +199,11 @@
         <option value="$PROJECT_DIR$/titlepage.html" />
         <option value="$PROJECT_DIR$/origin/mkdocs.yml" />
         <option value="$PROJECT_DIR$/_data/mydoc/mydoc_sidebar.yml" />
-        <option value="$PROJECT_DIR$/_includes/topnav.html" />
         <option value="$PROJECT_DIR$/_includes/feedback.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/_includes/topnav.html" />
       </list>
     </option>
   </component>
@@ -259,6 +248,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -277,10 +268,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jekyll2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jekyll2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common_images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jekyll2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jekyll2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jekyll2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jekyll2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jekyll2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jekyll2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -558,28 +603,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-486" width="2048" height="1129" extended-state="6" />
+    <frame x="1440" y="-486" width="2048" height="1129" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26615235" sideWeight="0.48051307" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33266333" sideWeight="0.48248643" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39826423" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16200578" sideWeight="0.52738035" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16200578" sideWeight="0.47261962" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297975" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16033547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16169393" sideWeight="0.52935374" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16169393" sideWeight="0.47064626" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33266333" sideWeight="0.48248643" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39826423" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -605,6 +650,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tocpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_data/mydoc/mydoc_glossary.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -623,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3539823">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6224189">
           <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.875">
           <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,7 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
           <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,7 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1111112">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.379311">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.344828">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.375">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375">
           <caret line="15" column="95" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="95" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,15 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/toc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,21 +938,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/topnav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8235295">
-          <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mydoc_2_multibuild_pdf.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding />
         </state>
@@ -954,7 +967,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/titlepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
@@ -962,7 +975,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tocpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding />
         </state>
@@ -970,7 +983,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
@@ -1001,8 +1014,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33047736">
+        <state vertical-scroll-proportion="-11.25">
           <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/toc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/topnav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32967034">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
