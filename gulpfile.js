@@ -8,14 +8,14 @@ var fs = require('fs');
 
 var baseUrl = "/HelpPages"
 var pages = new Array();
-var srcPattern = 'origin/docs/*/{,*/}*.md';
+var srcPattern = 'bower_components/help/docs/*/{,*/}*.md';
 gulp.task('default', function () {
-    pages = readPagesFromConfig('origin/mkdocs.yml');
+    pages = readPagesFromConfig('bower_components/help/mkdocs.yml');
     gulp.src(srcPattern)
         .pipe(modify({
             fileModifier: function (file, contents) {
                 // #1 add title to every page
-                interestinPathPart = file.path.substr(file.path.indexOf('origin/docs') + 12).toLowerCase();
+                interestinPathPart = file.path.substr(file.path.indexOf('help/docs') + ('help/docs'.length + 1)).toLowerCase();
                 pagesDetail = pages[interestinPathPart];
 
                 if (pagesDetail !== undefined) {
