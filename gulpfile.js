@@ -9,7 +9,7 @@ var isWin = /^win/.test(process.platform);
 
 var baseUrl = "/HelpPages"
 var pages = new Array();
-var srcPattern = 'bower_components/help/docs/*/{,*/}*.md';
+var srcPattern = 'source/docs/*/{,*/}*.md';
 function extracteIntrestingPart(file) {
     return file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
 }
