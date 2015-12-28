@@ -10,13 +10,16 @@ var isWin = /^win/.test(process.platform);
 var baseUrl = "/HelpPages"
 var pages = new Array();
 var srcPattern = 'bower_components/help/docs/*/{,*/}*.md';
+function extracteIntrestingPart(file) {
+    return file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
+}
 gulp.task('default', function () {
     pages = readPagesFromConfig('bower_components/help/mkdocs.yml');
     gulp.src(srcPattern)
         .pipe(modify({
             fileModifier: function (file, contents) {
                 // #1 add title to every page
-                interestinPathPart = file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
+                interestinPathPart = extracteIntrestingPart(file);
                 pagesDetail = pages[interestinPathPart];
 
                 if (pagesDetail !== undefined) {
@@ -61,13 +64,12 @@ gulp.task('concat sidebar', function (cb) {
 
     return gulp.src(srcPattern)
         .pipe(foreach(function (stream, file) {
-                interestinPathPart = file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
+                interestinPathPart = extracteIntrestingPart(file);
                 pagesDetail = pages[interestinPathPart];
 
                 if (pagesDetail !== undefined) {
                     // first time this title appear
                     tempFileContent = "";
-
 
                     if (menu[pagesDetail.parentMenu] === undefined) {
                         // add title
