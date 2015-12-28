@@ -44,6 +44,54 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: API Description
+      url: /HelpPages/en/latest/apidocs\apidescription\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Custom Actions
+      url: /HelpPages/en/latest/apidocs\customactions\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: NOSQL Query Language
+      url: /HelpPages/en/latest/apidocs\nosql_query_language\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Queries
+      url: /HelpPages/en/latest/apidocs\queries\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Realtime Database Communication
+      url: /HelpPages/en/latest/apidocs\realtime\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Security Concepts
+      url: /HelpPages/en/latest/apidocs\security\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
 
   - title: Getting Started
     audience: writers, designers
@@ -54,6 +102,70 @@ entries:
     items:
     - title: Introduction
       url: /HelpPages/en/latest/getting_started\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Hosting
+      url: /HelpPages/en/latest/getting_started\hosting\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Log
+      url: /HelpPages/en/latest/getting_started\log\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Objects
+      url: /HelpPages/en/latest/getting_started\objects\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Queries
+      url: /HelpPages/en/latest/getting_started\queries\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Quick Reference
+      url: /HelpPages/en/latest/getting_started\quick_reference\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Backand SDK
+      url: /HelpPages/en/latest/getting_started\sdk\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Security & Auth
+      url: /HelpPages/en/latest/getting_started\security_auth\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Settings
+      url: /HelpPages/en/latest/getting_started\settings\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -76,6 +188,86 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Amazon AWS and S3 Integration
+      url: /HelpPages/en/latest/scenarios\amazon\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Ionic with Backand
+      url: /HelpPages/en/latest/scenarios\ionic\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Mailgun
+      url: /HelpPages/en/latest/scenarios\mailgun\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Mandrillapp
+      url: /HelpPages/en/latest/scenarios\mandrillapp\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: PayPal
+      url: /HelpPages/en/latest/scenarios\paypal\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Segment.io
+      url: /HelpPages/en/latest/scenarios\segment\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Simple ToDo App
+      url: /HelpPages/en/latest/scenarios\simple_todo\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Simple Web App with REST API
+      url: /HelpPages/en/latest/scenarios\simple_web\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Stripe Integration
+      url: /HelpPages/en/latest/scenarios\stripe\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: ToDo With Users
+      url: /HelpPages/en/latest/scenarios\todo_users\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
 
   - title: Common Use Cases
     audience: writers, designers
@@ -86,6 +278,62 @@ entries:
     items:
     - title: What would you like to do?
       url: /HelpPages/en/latest/what_would_you_like_to_do\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Custom Actions
+      url: /HelpPages/en/latest/what_would_you_like_to_do\actions\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Database Setup & Configuration
+      url: /HelpPages/en/latest/what_would_you_like_to_do\database\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Internationalization
+      url: /HelpPages/en/latest/what_would_you_like_to_do\i18n\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: REST API Playground
+      url: /HelpPages/en/latest/what_would_you_like_to_do\rest\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Retrieving Data
+      url: /HelpPages/en/latest/what_would_you_like_to_do\retrieve_data\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Rolebased Security Configuration
+      url: /HelpPages/en/latest/what_would_you_like_to_do\security\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Integrating with Third Parties
+      url: /HelpPages/en/latest/what_would_you_like_to_do\third_party\index.html
       audience: writers, designers
       platform: all
       product: all
