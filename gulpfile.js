@@ -8,9 +8,10 @@ var fs = require('fs');
 
 var baseUrl = "/HelpPages"
 var pages = new Array();
+var srcPattern = 'origin/docs/*/{,*/}*.md';
 gulp.task('default', function () {
     pages = readPagesFromConfig('origin/mkdocs.yml');
-    gulp.src('origin/docs/{,*/}*.md')
+    gulp.src(srcPattern)
         .pipe(modify({
             fileModifier: function (file, contents) {
                 // #1 add title to every page
@@ -52,7 +53,7 @@ gulp.task('concat sidebar', function (cb) {
 
     finalFileContent = addHeader();
 
-    return gulp.src('origin/docs/{,*/}*.md')
+    return gulp.src(srcPattern)
         .pipe(foreach(function (stream, file) {
                 interestinPathPart = file.path.substr(file.path.indexOf('origin/docs') + 12).toLowerCase();
                 pagesDetail = pages[interestinPathPart];
@@ -90,7 +91,7 @@ gulp.task('concat sidebar', function (cb) {
                      //contents.files is an array
 
                 }
-                return gulp.src('origin/docs/{,*/}*.md')
+                return gulp.src(srcPattern)
 
             }
         ))
