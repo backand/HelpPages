@@ -5,6 +5,7 @@ var path = require('path');
 var foreach = require('gulp-foreach');
 var file = require('gulp-file');
 var fs = require('fs');
+var isWin = /^win/.test(process.platform);
 
 var baseUrl = "/HelpPages"
 var pages = new Array();
@@ -217,7 +218,14 @@ var findTitlesInMarkdownFile = function (filename) {
 }
 
 var readPagesFromConfig = function (filename) {
-    var array = fs.readFileSync(filename).toString().split("\n");
+    var text = fs.readFileSync(filename).toString();
+
+    if(isWin){
+        console.log("isWin");
+        text = text.replace(/\//g, '\\');
+    }
+
+    array = text.split("\n");
     pagesTagFound = false;
 
     pages = new Array();
