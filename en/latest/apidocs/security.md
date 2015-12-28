@@ -61,14 +61,14 @@ If you have a users object in your model, Backand adds the following actions, wh
 
 ```
 function backandCallback(userInput, dbRow, parameters, userProfile) {
-	var validEmail = function(email) 
+    var validEmail = function(email) 
     {
         var re = /\S+@\S+\.\S+/;
         return re.test(email);
     }
     
     // write your code here
-	if (!userInput.email){
+    if (!userInput.email){
         throw new Error("Backand user must have an email.");
     }
     
@@ -88,15 +88,15 @@ function backandCallback(userInput, dbRow, parameters, userProfile) {
 
 ```
 function backandCallback(userInput, dbRow, parameters, userProfile) {
-	
-	var randomPassword = function(length){
-	    if (!length) length = 10;
-	    return Math.random().toString(36).slice(-length);
-	}
+    
+    var randomPassword = function(length){
+        if (!length) length = 10;
+        return Math.random().toString(36).slice(-length);
+    }
     if (!parameters.password){
         parameters.password = randomPassword();
     }
-	
+    
     var backandUser = {
         password: parameters.password,
         confirmPassword: parameters.password,
@@ -107,7 +107,7 @@ function backandCallback(userInput, dbRow, parameters, userProfile) {
     
     // uncomment if you want to debug debug
     //console.log(parameters);
-	
+    
     var x = $http({method:"POST",url:CONSTS.apiUrl + "1/user" ,data:backandUser, headers: {"Authorization":userProfile.token, "AppName":userProfile.app}});
 
     // uncomment if you want to return the password and sign in as this user

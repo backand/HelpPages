@@ -38,26 +38,26 @@ In addition to the above parameters, you can also make use of the following glob
 function it always runs in sync). [See the full API description for more details](http://docs.backand.com/en/latest/apidocs/apidescription/index.html#rest-api-crud-operations):
     * GET example: 
 
-			var response = $http({method:"GET",url:CONSTS.apiUrl + "/1/objects/objectexample", 
-			                       params:{filter:[{fieldName:"fieldexample", operator:"contains", value:"somestring"}]}, 
-			                      headers: {"Authorization":userProfile.token}});
+            var response = $http({method:"GET",url:CONSTS.apiUrl + "/1/objects/objectexample", 
+                                   params:{filter:[{fieldName:"fieldexample", operator:"contains", value:"somestring"}]}, 
+                                  headers: {"Authorization":userProfile.token}});
 
     * POST example: 
     
-			var response = $http({method:"POST",url:CONSTS.apiUrl + "/1/objects/objectexample", 
-			                      data:{fieldexample1:"somevalue",fieldexample2:"somevalue"}, 
-			                      headers: {"Authorization":userProfile.token}});
+            var response = $http({method:"POST",url:CONSTS.apiUrl + "/1/objects/objectexample", 
+                                  data:{fieldexample1:"somevalue",fieldexample2:"somevalue"}, 
+                                  headers: {"Authorization":userProfile.token}});
 
     * PUT example: 
     
-			var response = $http({method:"PUT",url:CONSTS.apiUrl + "/1/objects/objectexample/5", 
-			                      data:{fieldexample1:"somevalue",fieldexample2:"somevalue"}, 
-			                      headers: {"Authorization":userProfile.token}});
+            var response = $http({method:"PUT",url:CONSTS.apiUrl + "/1/objects/objectexample/5", 
+                                  data:{fieldexample1:"somevalue",fieldexample2:"somevalue"}, 
+                                  headers: {"Authorization":userProfile.token}});
 
     * DELETE example: 
 
-			var response = $http({method:"DELETE",url:CONSTS.apiUrl + "/1/objects/objectexample/5", fieldexample2:"somevalue"}, 
-			                      headers: {"Authorization":userProfile.token}});
+            var response = $http({method:"DELETE",url:CONSTS.apiUrl + "/1/objects/objectexample/5", fieldexample2:"somevalue"}, 
+                                  headers: {"Authorization":userProfile.token}});
 
 * CONSTS: CONSTS.apiUrl for Backand's API URL
 

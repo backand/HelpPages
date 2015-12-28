@@ -26,14 +26,15 @@ gulp.task('default', function () {
                     // #2 change links from .md to .html
                     contents = contents.replace(/.md/g,'.html')
 
+                    // #3 replace tab by four spaces
+                    contents = contents.replace(/\t/g,'    ')
+
                     return header + contents;
                 }
                 else {
                     console.log("can't find " + interestinPathPart);
                     return "none";
                 }
-
-
             }
         }))
         .pipe(gulp.dest('en/latest'));
