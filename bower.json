@@ -1,0 +1,21 @@
+{
+  "name": "jekyll2",
+  "description": "This is the readme page of the Jekyll documentation theme.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Ygal Bellaiche <ygalbel@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/backand/HelpPages",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "help" : "git://github.com/backand/docs.git"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "jekyll2",
+  "version": "1.0.0",
+  "description": "This is the readme page of the Jekyll documentation theme.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "^2.2.0",
+    "gulp-concat-util": "^0.5.4",
+    "gulp": "^3.9.0",
+    "gulp-file": "^0.2.0",
+    "gulp-foreach": "^0.1.0",
+    "gulp-modify": "^0.1.1",
+    "bower" : "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backand/HelpPages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/backand/HelpPages/issues"
+  },
+  "homepage": "https://github.com/backand/HelpPages#readme"
+}
