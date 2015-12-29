@@ -59,6 +59,7 @@ gulp.task('default', function () {
 
 var finalFileContent = '';
 var menu = new Array();
+var viewFiles = [];
 
 gulp.task('concat sidebar', function (cb) {
     pages = readPagesFromConfig(mkdocsPath);
@@ -68,47 +69,47 @@ gulp.task('concat sidebar', function (cb) {
 
     return gulp.src(srcPattern)
         .pipe(foreach(function (stream, file) {
-                interestinPathPart = extracteIntrestingPart(file);
-                pagesDetail = pages[interestinPathPart];
+                if (viewFiles.indexOf(file.path) == -1) {
+                    viewFiles.push(file.path);
+                    interestinPathPart = extracteIntrestingPart(file);
+                    pagesDetail = pages[interestinPathPart];
 
-                if (pagesDetail !== undefined) {
-                    // first time this title appear
-                    tempFileContent = "";
-
-                    if (menu[pagesDetail.parentMenu] === undefined) {
-                        // add title
-                        tempFileContent = addLine(tempFileContent, 0, "");
-                        tempFileContent = addLine(tempFileContent, 1, "- title: " + pagesDetail.parentMenu);
-                        tempFileContent = addLine(tempFileContent, 1, "  audience: writers, designers");
-                        tempFileContent = addLine(tempFileContent, 1, "  platform: all");
-                        tempFileContent = addLine(tempFileContent, 1, "  product: all");
-                        tempFileContent = addLine(tempFileContent, 1, "  version: all");
-                        tempFileContent = addLine(tempFileContent, 1, "  output: web");
-                        tempFileContent = addLine(tempFileContent, 1, "  items:");
-
-
-                        menu[pagesDetail.parentMenu] = tempFileContent;
+                    if (pagesDetail !== undefined) {
+                        // first time this title appear
                         tempFileContent = "";
+
+                        if (menu[pagesDetail.parentMenu] === undefined) {
+                            // add title
+                            tempFileContent = addLine(tempFileContent, 0, "");
+                            tempFileContent = addLine(tempFileContent, 1, "- title: " + pagesDetail.parentMenu);
+                            tempFileContent = addLine(tempFileContent, 1, "  audience: writers, designers");
+                            tempFileContent = addLine(tempFileContent, 1, "  platform: all");
+                            tempFileContent = addLine(tempFileContent, 1, "  product: all");
+                            tempFileContent = addLine(tempFileContent, 1, "  version: all");
+                            tempFileContent = addLine(tempFileContent, 1, "  output: web");
+                            tempFileContent = addLine(tempFileContent, 1, "  items:");
+                            menu[pagesDetail.parentMenu] = tempFileContent;
+                            tempFileContent = "";
+                        }
+
+                        // add second part
+                        //console.log(pagesDetail.url, "\t", pagesDetail.title, "\t", file.path);
+                        tempFileContent = addLine(tempFileContent, 2, "- title: " + pagesDetail.title);
+                        tempFileContent = addLine(tempFileContent, 2, "  url: " + pagesDetail.url);
+                        tempFileContent = addLine(tempFileContent, 2, "  audience: writers, designers");
+                        tempFileContent = addLine(tempFileContent, 2, "  platform: all");
+                        tempFileContent = addLine(tempFileContent, 2, "  product: all");
+                        tempFileContent = addLine(tempFileContent, 2, "  version: all");
+                        tempFileContent = addLine(tempFileContent, 2, "  output: web");
+                        tempFileContent = addLine(tempFileContent, 2, "  type: frontmatter");
+
+                        menu[pagesDetail.parentMenu] += tempFileContent;
+                        //contents.files is an array
+
                     }
-
-                    // var titles =
-                    // add second part
-
-                    tempFileContent = addLine(tempFileContent, 2, "- title: " + pagesDetail.title);
-                    tempFileContent = addLine(tempFileContent, 2, "  url: " + pagesDetail.url);
-                    tempFileContent = addLine(tempFileContent, 2, "  audience: writers, designers");
-                    tempFileContent = addLine(tempFileContent, 2, "  platform: all");
-                    tempFileContent = addLine(tempFileContent, 2, "  product: all");
-                    tempFileContent = addLine(tempFileContent, 2, "  version: all");
-                    tempFileContent = addLine(tempFileContent, 2, "  output: web");
-                    tempFileContent = addLine(tempFileContent, 2, "  type: frontmatter");
-
-                    menu[pagesDetail.parentMenu] += tempFileContent;
-                    //contents.files is an array
-
-                }
-                else {
-                    console.log("can't find page for " + interestinPathPart)
+                    else {
+                        console.log("can't find page for " + interestinPathPart)
+                    }
                 }
                 return gulp.src(srcPattern)
             }
@@ -226,7 +227,7 @@ var findTitlesInMarkdownFile = function (filename) {
 var readPagesFromConfig = function (filename) {
     var text = fs.readFileSync(filename).toString();
 
-    if(isWin){
+    if (isWin) {
         console.log("isWin");
         text = text.replace(/\//g, '\\');
     }
@@ -266,5 +267,6 @@ var readPagesFromConfig = function (filename) {
         }
     }
 
+   // console.log(pages);
     return pages;
 }

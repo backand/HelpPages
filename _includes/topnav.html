@@ -1,108 +1,227 @@
 <style>
-.navbar{
-background:url({{ "/common_images/sec-bg.jpg" | prepend: site.baseurl | prepend: site.url }}) no-repeat;
-background-size:cover;
-}
+    .navbar {
+        background: url({{ "/common_images/sec-bg.jpg" | prepend: site.baseurl | prepend: site.url }}) no-repeat;
+        background-size: cover;
+    }
 </style>
 
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container topnavlinks">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+<div id="page" class="hfeed site">
+    <!-- /#push_sidebar -->
+    <div id="push_sidebar">
+        <ul class="list-unstyled">
+            <li><a href="https://www.backand.com/features/">Features</a></li>
+            <li><a href="https://www.backand.com/integrations/">Integrations</a></li>
+            <li class="subliresp dropdown get_started2"><a href="#" class="dropdown-toggle" role="button"
+                                                           aria-haspopup="true" aria-expanded="false">Getting
+                Started</a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://www.backand.com/mobile-getting-started/"> Mobile Start</a></li>
+                    <li><a href="https://www.backand.com/getting-started">Web Start</a></li>
+                </ul>
+            </li>
+            <style>
+                #push_sidebar .subliresp.dropdown.get_started2 ul li a {
+                    color: #555 !important;
+                    padding: 14px 40px;
+                }
+
+                #push_sidebar .subliresp.dropdown.get_started2 a:hover {
+                    color: #fe4a00 !important;
+                }
+
+                #push_sidebar .subliresp.dropdown.get_started2.open a {
+                    background: none;
+                }
+
+                .subliresp.dropdown.get_started2:hover > ul {
+                    display: block !important;
+                    width: 100%;
+                }
+
+                #push_sidebar .subliresp.dropdown.get_started2 ul li a {
+                    color: #505050 !important;
+                    padding: 14px 40px;
+                }
+
+                #push_sidebar .subliresp.dropdown.get_started2 ul li a:hover {
+                    color: #fe4a00 !important;
+                    background: none;
+                }
+
+                .get_started2 ul {
+                    min-width: 10px;
+                }
+
+                header .navbar-default .navbar-nav > li.get_started2.open > a {
+                    background: none !important;
+                    color: #fff;
+                }
+
+                header .navbar-default li.get_started2 ul li {
+                    position: relative;
+                }
+
+                header .navbar-default li.get_started2 ul li a {
+                    font-size: 13px;
+                }
+
+                .dropdown-menu:before {
+                    position: absolute;
+                    top: -7px;
+                    left: 43%;
+                    display: inline-block;
+                    border-right: 7px solid transparent;
+                    border-bottom: 7px solid #ccc;
+                    border-left: 7px solid transparent;
+                    border-bottom-color: rgba(0, 0, 0, 0.2);
+                    content: '';
+                }
+
+                .dropdown-menu:after {
+                    position: absolute;
+                    top: -6px;
+                    left: 43%;
+                    display: inline-block;
+                    border-right: 6px solid transparent;
+                    border-bottom: 6px solid #ffffff;
+                    border-left: 6px solid transparent;
+                    content: '';
+                }
+
+                .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+                    color: #fe4a00;
+                    background: none;
+                }
+            </style>
+            <li><a href="http://docs.backand.com" target="_blank"> Docs</a></li>
+            <li><a href="https://www.backand.com/pricing-beta/"> Pricing</a></li>
+            <li><a href="https://www.backand.com/support-center/"> Support</a></li>
+
+        </ul>
+
+        <a class="try_now try_now4" title="" href="https://www.backand.com/apps/#/sign_up/">Signup Now</a>
+    </div>
+    <!-- /#push_sidebar -->
 
 
-            <a class="fa fa-home fa-lg navbar-brand" href="home.html">&nbsp;<span class="projectTitle">
-                <img src="{{ "/common_images/Backand-logo.png" | prepend: site.baseurl | prepend: site.url }}"/> {{site.topnav_title}}</span></a>
-            </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <!-- entries without drop-downs appear here -->
-                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
-                {% include custom/conditions.html %}
-
-                {% for entry in topnav %}
-                {% for subcategory in entry.subcategories %}
-                {% if subcategory.audience contains audience and subcategory.product contains product and subcategory.platform contains platform and subcategory.version contains version and subcategory.output contains "web" %}
-                {% if subcategory.external_url %}
-                <li><a href="{{subcategory.external_url}}" target="_blank">{{subcategory.title}}</a></li>
-                {% elsif page.url == subcategory.url %}
-                <li class="active"><a href="{{subcategory.url | replace: "/",""}}">{{subcategory.title}}</a></li>
-                {% else %}
-                <li><a href="{{subcategory.url | replace: "/",""}}">{{subcategory.title}}</a></li>
-                {% endif %}
-                {% endif %}
-                {% endfor %}
-                {% endfor %}
+    <div>
+        <section class="top_sec">
+            <div class="top-layout">
+                <!------------ sticky Header Start here   ------------>
+                <div class="stickey-header">
+                    <div class="logo stic-logo"><a href="https://www.backand.com/" title=""><img
+                            src="/common_images/logo_nobeta-e1435701728160.png"
+                            alt="Instant Angular Backend in the Cloud"></a></div>
+                    <a href="#" class=" icon-menu resp-menu-button"></a>
+                    <nav id="desktopnav">
+                        <ul class="main-menu menu-stickey">
 
 
-                <!-- entries with drop-downs appear here -->
-                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                            <li class="raw-gett"><a href="https://www.backand.com/features/">Features</a></li>
+                            <li><a href="https://www.backand.com/integrations/">Integrations</a></li>
+                            <li class="subli dropdown get_started2"><a href="https://www.backand.com/getting-started/"
+                                                                       role="button" aria-haspopup="true"
+                                                                       aria-expanded="false">Getting Started</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.backand.com/mobile-getting-started">Mobile Start</a></li>
+                                    <li><a href="https://www.backand.com/getting-started">Web Start</a></li>
+                                </ul>
+                            </li>
+                            <style>
+                                .subli.dropdown.get_started2 a {
+                                    color: #4c4c4c !important;
+                                    display: block;
+                                }
 
-                <li class="dropdown">
-                    {% for entry in topnav_dropdowns %}
-                    {% for subcategory in entry.subcategories %}
-                    {% if subcategory.audience contains audience and subcategory.product contains product and subcategory.platform contains platform and subcategory.version contains version and subcategory.output contains "web" %}
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ subcategory.title }}<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        {% for subitem in subcategory.items %}
-                        {% if subitem.audience contains audience and subitem.product contains product and subitem.platform contains platform and subcategory.version contains version and subitem.output contains "web" %}
-                        {% if subitem.external_url %}
-                        <li><a href="{{subitem.external_url}}" target="_blank">{{subitem.title}}</a></li>
-                        {% elsif page.url contains subitem.url %}
-                        <li class="dropdownActive"><a href="{{subitem.url}}">{{subitem.title}}</a></li>
-                        {% else %}
-                        <li><a href="{{subitem.url | replace: "/",""}}">{{subitem.title}}</a></li>
-                        {% endif %}
-                        {% endif %}
-                        {% endfor %}
-                        {% endif %}
+                                .subli.dropdown.get_started2 a:hover {
+                                    color: #fe4a00 !important;
+                                    background: none !important;
+                                }
 
-                    </ul>
-                </li>
-                {% endfor %}
-                {% endfor %}
+                                .subli.dropdown.get_started2.open a {
+                                    background: none;
+                                }
 
+                                .subli.dropdown.get_started2:hover > ul {
+                                    display: block !important;
+                                }
 
-                <!-- special insertion -->
+                                ul.nav .subli.dropdown.get_started2 ul li a {
+                                    color: #505050 !important;
+                                }
 
-               {% if site.project == "mydoc_designers" or site.project == "mydoc_writers" %}
-                {% comment %}
-                {% include custom/mydoc/custom_menu.html %}
-                {% endcomment %}
-                {% endif %}
-                {% include feedback.html %}
+                                ul.nav .subli.dropdown.get_started2 ul li a:hover {
+                                    color: #fe4a00 !important;
+                                }
 
+                                .get_started2 ul {
+                                    min-width: 10px;
+                                }
 
-                <li>
-                    <!-- start search -->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="{{site.data.strings.search_placeholder_text}}">
-                        <ul id="results-container"></ul>
+                                header .navbar-default .navbar-nav > li.get_started2.open > a {
+                                    background: none !important;
+                                    color: #fff;
+                                }
+
+                                header .navbar-default li.get_started2 ul li {
+                                    position: relative;
+                                }
+
+                                header .navbar-default li.get_started2 ul li a {
+                                    font-size: 13px;
+                                }
+
+                                .dropdown-menu:before {
+                                    position: absolute;
+                                    top: -7px;
+                                    left: 43%;
+                                    display: inline-block;
+                                    border-right: 7px solid transparent;
+                                    border-bottom: 7px solid #ccc;
+                                    border-left: 7px solid transparent;
+                                    border-bottom-color: rgba(0, 0, 0, 0.2);
+                                    content: '';
+                                }
+
+                                .dropdown-menu:after {
+                                    position: absolute;
+                                    top: -6px;
+                                    left: 43%;
+                                    display: inline-block;
+                                    border-right: 6px solid transparent;
+                                    border-bottom: 6px solid #ffffff;
+                                    border-left: 6px solid transparent;
+                                    content: '';
+                                }
+
+                                .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+                                    color: #fe4a00;
+                                    background: none;
+                                }
+                            </style>
+                            <li><a href="http://docs.backand.com" target="_blank">Docs</a></li>
+                            <li><a href="https://www.backand.com/pricing-beta/">Pricing</a></li>
+                            <li><a href="https://www.backand.com/support-center/">Support</a></li>
+                            <li class="login-try"><a href="https://www.backand.com/apps/#/sign_in">login</a></li>
+                            <li class="login-nav"><a href="https://www.backand.com/apps/#/sign_up">TRY IT NOW</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="mview nav_view">
+                        <a class="login-raww" title="" href="/apps/#/sign_up">TRY IT NOW</a>
+                        <span class="nav_trigger trigger_try"><i class="fa fa-navicon"></i></span>
                     </div>
+                </div>
+                <!--  new-header -->
+                <!------------  Header Closed here   ------------>
+            </div>
+        </section>
+    </div>
+    <!-- .entry-content -->
 
-                    <script src="{{ "/js/jekyll-search.js" | prepend: site.baseurl | prepend: site.url }}" type="text/javascript"></script>
-                    <script type="text/javascript">
-                        SimpleJekyllSearch.init({
-                            searchInput: document.getElementById('search-input'),
-                            resultsContainer: document.getElementById('results-container'),
-                            dataSource: '{{ "/search.json" | prepend: site.baseurl | prepend: site.url }}',
-                            searchResultTemplate: '<li><a href="{url}" title="{{page.title | replace: "'", "\"}}">{title}</a></li>',
-                        noResultsText: '{{site.data.strings.search_no_results_text}}',
-                                limit: 10,
-                                fuzzy: true,
-                        })
-                    </script>
-                    <!-- end search -->
-                </li>
-            {% comment %}
-                {% include frameescape.html %}
-                {% endcomment %}
-        </div>
-        <!-- /.container -->
-</nav>
+    <!-- #post-## -->
+
+
+    <!-- #main -->
+</div>

@@ -15,7 +15,7 @@ project_folder: mydoc
 company_name: Backand
 footer_image_location: ../common_images/company_logo.png
 github_editme_path: tomjohnson1492/documentation-theme-jekyll/edit/reviews
-disqus_shortname: idrbwjekyll
+disqus_shortname: backand
 # variables
 
 sidebar_tagline: Documentation

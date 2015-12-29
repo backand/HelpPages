@@ -1,32 +1,90 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-<meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
-<title>{% if page.homepage == true %} {{site.homepage_title}} {% elsif page.title %}{{ page.title }}{% endif %}  | {{ site.site_title }}</title>
-<link rel="stylesheet" type="text/css" href="{{ "css/syntax.css" | prepend: site.baseurl | prepend: site.url}}">
 
+<link rel="stylesheet" href="https://www.backand.com/wp-content/themes/flat-bootstrap/css/custom.css">
+<link rel="stylesheet" href="https://www.backand.com/wp-content/themes/flat-bootstrap/css/backand-style-1.0.0.min.css">
+<script src="//cdn.optimizely.com/js/2805700436.js"></script>
 
-<link rel="stylesheet" type="text/css"  href="{{ "css/font-awesome.min.css" | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" type="text/css"  href="{{ "css/modern-business.css" | prepend: site.baseurl | prepend: site.url }}">
-<!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">-->
-<link rel="stylesheet" type="text/css"  href="{{ "css/lavish-bootstrap.css" | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" type="text/css"  href="{{ "css/customstyles.css" | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" type="text/css"  href="{{ "css/{{site.theme_file}}" | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" type="text/css"  href="https://www.backand.com/wp-content/themes/flat-bootstrap/style.css?ver=4.2.5">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+
+<!-- BEGIN Metadata added by Add-Meta-Tags WordPress plugin -->
+<meta name="description" content="An out-of-the-box, hosted backend for AngularJS that takes care of the database, security, user management and more" />
+<meta name="keywords" content="angularjs, backend, angular, backend-as-a-service, baas" />
+<!-- END Metadata added by Add-Meta-Tags WordPress plugin -->
+
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.backand.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://www.backand.com/wp-content/themes/flat-bootstrap/bootstrap/css/bootstrap.min.css?ver=3.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-base-css'  href='https://www.backand.com/wp-content/themes/flat-bootstrap/css/theme-base.css?ver=20140913' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-flat-css'  href='https://www.backand.com/wp-content/themes/flat-bootstrap/css/theme-flat.css?ver=20140913' type='text/css' media='all' />
+<link rel='stylesheet' id='xtremelysocial-style-css'  href='https://www.backand.com/wp-content/themes/flat-bootstrap/style.css?ver=4.2.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.backand.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type="text/javascript" >
+    !function(){var analytics=window.analytics=window.analytics||[];if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.0";
+        window.analytics.load("B9HnYlGFEZGQ99PkivFxE4kK4M8PKk3B");
+        window.analytics.page();
+    }}();
+</script>
+<link rel='canonical' href='https://www.backand.com/' />
+<link rel='shortlink' href='https://www.backand.com/' />
+<style type="text/css">
+
+    .navbar-brand {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+</style>
+
+<script>
+    !function(e,t){var r='JacoRecorder';!function(e,t,n,o){function c(e,t){e[t]=function(){e.q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}if(!n.__VERSION){e[r]=n,n.q=[];for(var a=['init','identify','startRecording','stopRecording','setUserInfo'],i=0;i<a.length;i++)c(n,a[i]);n.__VERSION=.8,n.__INIT_TIME=1*new Date;var s=t.createElement('script');s.async=!0,s.setAttribute('crossorigin','anonymous'),s.src=o;var u=t.getElementsByTagName('script')[0];u.parentNode.insertBefore(s,u)}}(e,t,e[r]||[],'//bo.getjaco.com/build/recorder.js')}(window,document); JacoRecorder.init('6656e2be-5e88-42cc-a5d3-8881595f29fe', {}); JacoRecorder.identify('blog');
+</script>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
 <script src="{{ "js/jquery.navgoco.min.js" | prepend: site.baseurl | prepend: site.url }}" </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="{{ "js/toc.js" | prepend: site.baseurl | prepend: site.url }}"></script>
 <script src="{{ "js/customscripts.js" | prepend: site.baseurl | prepend: site.url }}"></script>
 <link rel="shortcut icon" href="../common_images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css"  href="{{ "css/font-awesome.min.css" | prepend: site.baseurl | prepend: site.url }}">
+
+<link rel="stylesheet" type="text/css" href="{{ "css/syntax.css" | prepend: site.baseurl | prepend: site.url}}">
+<link rel="stylesheet" type="text/css"  href="{{ "css/customstyles.css" | prepend: site.baseurl | prepend: site.url }}">
+
+
+<script src="/HelpPages//js/jekyll-search.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        SimpleJekyllSearch.init({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            dataSource: '/HelpPages//search.json',
+            searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+            noResultsText: 'No results found.',
+            limit: 10,
+            fuzzy: true
+        })
+    });
+</script>
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+<![endif]-->
+
+
+
+
+
+
+
+
+
 <![endif]-->
 
 
