@@ -9,17 +9,19 @@ var isWin = /^win/.test(process.platform);
 
 var baseUrl = "/HelpPages"
 var pages = new Array();
-var srcPattern = 'source/docs/*/{,*/}*.md';
+var srcPattern = 'source/docs/{,*/}{,*/}*.md';
 var mkdocsPath = 'source/mkdocs.yml';
 
 function extracteIntrestingPart(file) {
     return file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
 }
 gulp.task('default', function () {
+
     pages = readPagesFromConfig(mkdocsPath);
     gulp.src(srcPattern)
         .pipe(modify({
             fileModifier: function (file, contents) {
+                console.log(file.path);
                 // #1 add title to every page
                 interestinPathPart = extracteIntrestingPart(file);
                 pagesDetail = pages[interestinPathPart];
