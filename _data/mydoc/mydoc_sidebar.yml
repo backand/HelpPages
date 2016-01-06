@@ -132,14 +132,6 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Log
-      url: /HelpPages/en/latest/getting_started\log\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
     - title: Objects
       url: /HelpPages/en/latest/getting_started\objects\index.html
       audience: writers, designers
@@ -150,6 +142,14 @@ entries:
       type: frontmatter
     - title: Queries
       url: /HelpPages/en/latest/getting_started\queries\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Log
+      url: /HelpPages/en/latest/getting_started\log\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -260,16 +260,16 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Stripe Integration
-      url: /HelpPages/en/latest/scenarios\stripe\index.html
+    - title: Simple Web App with REST API
+      url: /HelpPages/en/latest/scenarios\simple_web\index.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web
       type: frontmatter
-    - title: Simple Web App with REST API
-      url: /HelpPages/en/latest/scenarios\simple_web\index.html
+    - title: Stripe Integration
+      url: /HelpPages/en/latest/scenarios\stripe\index.html
       audience: writers, designers
       platform: all
       product: all
