@@ -1,7 +1,7 @@
 ---
 title: API Description
 ---
-# Security & Authentication
+## Security & Authentication
 
 Backand provides role-based security that allows you to determine specific permissions for each group of users. Backand uses [OAuth2](http://oauth.net/2/) authentication to identify users. Backand's implementation of OAuth2 authentication requires you to send the username, password, and appname (application name). In response, you receive an authentication token that must be supplied for all further communication with Backand.
 
@@ -180,7 +180,7 @@ If you want to allow anonymous users to access the application (i.e. without use
     
 ```
 
-# REST API CRUD Operations
+## REST API CRUD Operations
 
 Once authentication is completed, you can perform all relevant [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations in your application:
 
@@ -374,7 +374,7 @@ DELETE to `/objects/{name}/{id}` to remove an item:
   };
 ```
 
-# Custom Actions
+## Custom Actions
 
 [Custom actions](../customactions/index.html) can be called by sending a GET request to `/objects/action/{objectName}/{id}` The custom action is associated with an object list in order to simplify security configuration. It can also be associated with a specific object id, which is used as an input to the action, but this is optional. You can also define additional parameters in the request, which are passed through to the function. The action returns a custom JSON response.
 
@@ -394,7 +394,7 @@ self.callAction = function (objectName, id, actionName, parameters) {
 ```
 **Note**: You can find a configuration and testing environment for each of the [custom actions](../customactions/index.html) in the right side menu for your application on an object's Actions tab. 
 
-# Queries
+## Queries
 
 You can run custom pre-configured queries by sending a GET request to `/query/data/{queryName}` The query syntax must follow the SQL rules of the underlying database that your application is using. You can include predefined parameters in your request that are then used by your query.
 
@@ -415,6 +415,6 @@ self.query = function (queryName, parameters) {
 **Note**: You can find a configuration and testing environment for custom queries in the Application dashboard's right side menu, under "Queries". 
 
 
-# Experience More
+## Experience More
 
 To dive deeper into Backand's functionality, clone our Angular demo application on [github](https://github.com/backand/angular-yeoman-todos)
