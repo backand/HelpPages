@@ -60,7 +60,7 @@ gulp.task('default', function () {
 var finalFileContent = '';
 var menu = new Array();
 var viewFiles = [];
-
+var pageOrder = new Array();
 gulp.task('concat sidebar', function (cb) {
     pages = readPagesFromConfig(mkdocsPath);
 
@@ -117,10 +117,10 @@ gulp.task('save menu', ['concat sidebar'], function () {
     finalFileContent = addHeader();
 
     // iterate over keys to keep original order
-    var keys = Object.keys(pages);
-    for (var k in keys) {
-        var currentKey = keys[k];
+    for (var k in pageOrder) {
+        var currentKey = pageOrder[k];
         console.log("KEY", currentKey);
+
         finalFileContent += menu[currentKey];
     }
 
@@ -254,24 +254,30 @@ var readPagesFromConfig = function (filename) {
             l1 = l1.split(',');
 
             if (l1.length == 2) { // two parts
-                pages[l1[0].trim().toLowerCase()] = {'parentMenu': '', 'title': l1[1].replace(' ', ''), 'index' : i}; // remove first space char
+                pages[l1[0].trim().toLowerCase()] = {'parentMenu': '', 'title': l1[1].replace(' ', '')}; // remove first space char
+                pageOrder.push('');
 
             }
             else if (l1.length == 3) {
+
+                var key = l1[1].replace(' ', '');
                 console.log("insert", l1[0].trim().toLowerCase());
 
                 pages[l1[0].trim().toLowerCase()] = {
-                    'parentMenu': l1[1].replace(' ', ''),
+                    'parentMenu': key,
                     'title': l1[2].trimLeft(),
-                    'url': baseUrl + "/en/latest/" + l1[0].trim().toLowerCase().replace(".md", ".html"),
-                    'index' : i
-                };
-            }
+                    'url': baseUrl + "/en/latest/" + l1[0].trim().toLowerCase().replace(".md", ".html")
 
-            i++;
+                };
+
+                // first time we see this menu
+                if (pageOrder.indexOf(key) == -1) {
+                    pageOrder.push(key);
+                }
+            }
         }
     }
 
-   // console.log(pages);
+    // console.log(pages);
     return pages;
 }
