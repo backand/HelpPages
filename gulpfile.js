@@ -65,13 +65,12 @@ gulp.task('concat sidebar', function (cb) {
     pages = readPagesFromConfig(mkdocsPath);
 
     //var knownEntries = [''];
-
-
     return gulp.src(srcPattern)
         .pipe(foreach(function (stream, file) {
                 if (viewFiles.indexOf(file.path) == -1) {
                     viewFiles.push(file.path);
                     interestinPathPart = extracteIntrestingPart(file);
+
                     pagesDetail = pages[interestinPathPart];
 
                     if (pagesDetail !== undefined) {
@@ -104,8 +103,6 @@ gulp.task('concat sidebar', function (cb) {
                         tempFileContent = addLine(tempFileContent, 2, "  type: frontmatter");
 
                         menu[pagesDetail.parentMenu] += tempFileContent;
-                        //contents.files is an array
-
                     }
                     else {
                         console.log("can't find page for " + interestinPathPart)
@@ -118,8 +115,13 @@ gulp.task('concat sidebar', function (cb) {
 
 gulp.task('save menu', ['concat sidebar'], function () {
     finalFileContent = addHeader();
-    for (var k in menu) {
-        finalFileContent += menu[k];
+
+    // iterate over keys to keep original order
+    var keys = Object.keys(pages);
+    for (var k in keys) {
+        var currentKey = keys[k];
+        console.log("KEY", currentKey);
+        finalFileContent += menu[currentKey];
     }
 
 
@@ -252,7 +254,7 @@ var readPagesFromConfig = function (filename) {
             l1 = l1.split(',');
 
             if (l1.length == 2) { // two parts
-                pages[l1[0].trim().toLowerCase()] = {'parentMenu': '', 'title': l1[1].replace(' ', '')}; // remove first space char
+                pages[l1[0].trim().toLowerCase()] = {'parentMenu': '', 'title': l1[1].replace(' ', ''), 'index' : i}; // remove first space char
 
             }
             else if (l1.length == 3) {
@@ -261,9 +263,12 @@ var readPagesFromConfig = function (filename) {
                 pages[l1[0].trim().toLowerCase()] = {
                     'parentMenu': l1[1].replace(' ', ''),
                     'title': l1[2].trimLeft(),
-                    'url': baseUrl + "/en/latest/" + l1[0].trim().toLowerCase().replace(".md", ".html")
+                    'url': baseUrl + "/en/latest/" + l1[0].trim().toLowerCase().replace(".md", ".html"),
+                    'index' : i
                 };
             }
+
+            i++;
         }
     }
 
