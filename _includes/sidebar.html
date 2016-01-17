@@ -13,12 +13,16 @@
                     $(".col-md-9").height(newHeight)
                 }
 
-
                 // find current entry in menu
                 u = window.location.pathname.split('/')
-                var url = "../" + u[u.length -2] + "/" + u[u.length - 1];
 
+                if(u.length >= 3){
+                    var url =u[u.length - 3] + "/" + u[u.length - 2] + "/" + u[u.length - 1];
 
+                }
+                else {
+                    var url = "/" + u[u.length -2] + "/" + u[u.length - 1];
+                }
 
                 //var title = $(".post-title-main").text();
                 $("#mysidebar > li > ul > li > a[href$='"+ url +"']").css("background-color","#248ec2")
