@@ -22,7 +22,7 @@ sidebar_tagline: Documentation
 sidebar_version: Version 1.8.x
 theme_file: theme-blue.css
 pdf_file_name: mydoc_designers_pdf.pdf
-baseurl: /HelpPages/
+baseurl: /
 port: 4009
 
 exclude:

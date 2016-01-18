@@ -7,7 +7,7 @@ var file = require('gulp-file');
 var fs = require('fs');
 var isWin = /^win/.test(process.platform);
 
-var baseUrl = "/HelpPages"
+var baseUrl = ""
 var pages = new Array();
 var srcPattern = 'source/docs/{,*/}{,*/}*.md';
 var mkdocsPath = 'source/mkdocs.yml';
