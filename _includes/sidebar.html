@@ -24,6 +24,10 @@
                     var url = "/" + u[u.length -2] + "/" + u[u.length - 1];
                 }
 
+                var prefix = '/en/latest/'
+
+                url = prefix + url;
+
                 //var title = $(".post-title-main").text();
                 $("#mysidebar > li > ul > li > a[href$='"+ url +"']").css("background-color","#248ec2")
                 console.log('asd');
