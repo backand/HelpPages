@@ -29,8 +29,6 @@ entries:
       output: pdf
       type: frontmatter
 
-
-
   - title: Getting Started
     audience: writers, designers
     platform: all
@@ -232,6 +230,14 @@ entries:
       type: frontmatter
     - title: Retrieving Data
       url: /en/latest/what_would_you_like_to_do\retrieve_data\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Geography Point
+      url: /en/latest/what_would_you_like_to_do\geo\index.html 
       audience: writers, designers
       platform: all
       product: all
