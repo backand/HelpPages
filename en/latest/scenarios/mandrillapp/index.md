@@ -1,5 +1,5 @@
 ---
-title: Mandrillapp
+title: Mandrill
 ---
 ## What is Mandrill?
 Mandrill is an email infrastructure service that focuses on transactional emails. Using Mandrill, you can send personalized e-commerce messages on a one-to-one basis, or automated transactional messages for things like password resets, order confirmations, and welcome messages.

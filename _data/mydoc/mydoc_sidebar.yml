@@ -332,7 +332,7 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Mandrillapp
+    - title: Mandrill
       url: /en/latest/scenarios\mandrillapp\index.html
       audience: writers, designers
       platform: all
