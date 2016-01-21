@@ -78,6 +78,7 @@ gulp.task('concat sidebar', function (cb) {
                         tempFileContent = "";
 
                         if (menu[pagesDetail.parentMenu] === undefined) {
+
                             // add title
                             tempFileContent = addLine(tempFileContent, 0, "");
                             tempFileContent = addLine(tempFileContent, 1, "- title: " + pagesDetail.parentMenu);
@@ -87,8 +88,9 @@ gulp.task('concat sidebar', function (cb) {
                             tempFileContent = addLine(tempFileContent, 1, "  version: all");
                             tempFileContent = addLine(tempFileContent, 1, "  output: web");
                             tempFileContent = addLine(tempFileContent, 1, "  items:");
-                            menu[pagesDetail.parentMenu] = tempFileContent;
-                            tempFileContent = "";
+
+                            // tempFileContent will be added in the end of function
+                            menu[pagesDetail.parentMenu] = new Array();
                         }
 
                         // add second part
@@ -102,7 +104,7 @@ gulp.task('concat sidebar', function (cb) {
                         tempFileContent = addLine(tempFileContent, 2, "  output: web");
                         tempFileContent = addLine(tempFileContent, 2, "  type: frontmatter");
 
-                        menu[pagesDetail.parentMenu] += tempFileContent;
+                        menu[pagesDetail.parentMenu][pagesDetail.title] = tempFileContent;
                     }
                     else {
                         console.log("can't find page for " + interestinPathPart)
@@ -118,10 +120,12 @@ gulp.task('save menu', ['concat sidebar'], function () {
 
     // iterate over keys to keep original order
     for (var k in pageOrder) {
-        var currentKey = pageOrder[k];
+        currentKey = pageOrder[k];
+        currentParent = currentKey.parentMenu;
+        currentTitle = currentKey.title;
         console.log("KEY", currentKey);
 
-        finalFileContent += menu[currentKey];
+        finalFileContent += menu[currentParent][currentTitle];
     }
 
 
@@ -255,7 +259,7 @@ var readPagesFromConfig = function (filename) {
 
             if (l1.length == 2) { // two parts
                 pages[l1[0].trim().toLowerCase()] = {'parentMenu': '', 'title': l1[1].replace(' ', '')}; // remove first space char
-                pageOrder.push('');
+                pageOrder.push({'parentMenu': '', 'title': l1[1].replace(' ', '')});
 
             }
             else if (l1.length == 3) {
@@ -270,10 +274,10 @@ var readPagesFromConfig = function (filename) {
 
                 };
 
-                // first time we see this menu
-                if (pageOrder.indexOf(key) == -1) {
-                    pageOrder.push(key);
-                }
+                pageOrder.push({
+                    'parentMenu': key,
+                    'title': l1[2].trimLeft()
+                });
             }
         }
     }
