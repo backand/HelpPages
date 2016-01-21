@@ -258,7 +258,7 @@ var readPagesFromConfig = function (filename) {
             l1 = l1.split(',');
 
             if (l1.length == 2) { // two parts
-                pages[l1[0].trim().toLowerCase()] = {'parentMenu': '', 'title': l1[1].replace(' ', '')}; // remove first space char
+                pages[l1[0].trim().toLowerCase()] = {'parentMenu': '', 'title': l1[1].replace(' ', ''), 'url': '/'}; // remove first space char
                 pageOrder.push({'parentMenu': '', 'title': l1[1].replace(' ', '')});
 
             }
