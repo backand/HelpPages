@@ -340,6 +340,14 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Simple Web App with REST API
+      url: /en/latest/scenarios\simple_web\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
     - title: Stripe Integration
       url: /en/latest/scenarios\stripe\index.html
       audience: writers, designers
@@ -350,14 +358,6 @@ entries:
       type: frontmatter
     - title: ToDo With Users
       url: /en/latest/scenarios\todo_users\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Simple Web App with REST API
-      url: /en/latest/scenarios\simple_web\index.html
       audience: writers, designers
       platform: all
       product: all
