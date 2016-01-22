@@ -349,7 +349,7 @@ entries:
       output: web
       type: frontmatter
     - title: SendGrid
-      url: /en/latest/scenarios\sendgrid\index.html
+      url: /en/latest/scenarios\sendgridapp\index.html
       audience: writers, designers
       platform: all
       product: all
