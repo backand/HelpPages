@@ -57,7 +57,7 @@ In order to query get geography points dynamically, use [Query](http://docs.back
   { 
     "object": "restaurants", 
     "q": {
-      "location" : { "$withinMiles" : [["{{lan}}", "{{lon}}"], "{{dist}}"] } 
+      "location" : { "$withinMiles" : [[\\"{{lan}}\\", "{{lon}}"], "{{dist}}"] } 
     } 
   }
 ```
