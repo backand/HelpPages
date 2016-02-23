@@ -37,7 +37,7 @@ entries:
     output: web
     items:
     - title: Backand Documentation
-      url: undefined
+      url: /
       audience: writers, designers
       platform: all
       product: all
@@ -60,16 +60,16 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Hosting
-      url: /en/latest/getting_started\hosting\index.html
+    - title: Quick Reference
+      url: /en/latest/getting_started\quick_reference\index.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web
       type: frontmatter
-    - title: Log
-      url: /en/latest/getting_started\log\index.html
+    - title: Backand SDK
+      url: /en/latest/getting_started\sdk\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -92,24 +92,24 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Quick Reference
-      url: /en/latest/getting_started\quick_reference\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Backand SDK
-      url: /en/latest/getting_started\sdk\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
     - title: Security & Auth
       url: /en/latest/getting_started\security_auth\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Hosting
+      url: /en/latest/getting_started\hosting\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Log
+      url: /en/latest/getting_started\log\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -140,16 +140,8 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: API Description
-      url: /en/latest/apidocs\apidescription\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Custom Actions
-      url: /en/latest/apidocs\customactions\index.html
+    - title: Security Concepts
+      url: /en/latest/apidocs\security\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -164,8 +156,16 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: NOSQL Query Language
-      url: /en/latest/apidocs\nosql_query_language\index.html
+    - title: Realtime Database Communication
+      url: /en/latest/apidocs\realtime\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Custom Actions
+      url: /en/latest/apidocs\customactions\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -180,16 +180,16 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Realtime Database Communication
-      url: /en/latest/apidocs\realtime\index.html
+    - title: NOSQL Query Language
+      url: /en/latest/apidocs\nosql_query_language\index.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web
       type: frontmatter
-    - title: Security Concepts
-      url: /en/latest/apidocs\security\index.html
+    - title: API Description
+      url: /en/latest/apidocs\apidescription\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -212,14 +212,6 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Custom Actions
-      url: /en/latest/what_would_you_like_to_do\actions\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
     - title: Database Setup & Configuration
       url: /en/latest/what_would_you_like_to_do\database\index.html
       audience: writers, designers
@@ -228,24 +220,8 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Internationalization
-      url: /en/latest/what_would_you_like_to_do\i18n\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
     - title: REST API Playground
       url: /en/latest/what_would_you_like_to_do\rest\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Retrieving Data
-      url: /en/latest/what_would_you_like_to_do\retrieve_data\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -268,6 +244,38 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Geography Points
+      url: /en/latest/what_would_you_like_to_do\geo\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Custom Actions
+      url: /en/latest/what_would_you_like_to_do\actions\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Retrieving Data
+      url: /en/latest/what_would_you_like_to_do\retrieve_data\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Internationalization
+      url: /en/latest/what_would_you_like_to_do\i18n\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
 
   - title: Scenarios
     audience: writers, designers
@@ -284,8 +292,8 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Amazon AWS and S3 Integration
-      url: /en/latest/scenarios\amazon\index.html
+    - title: Simple Web App with REST API
+      url: /en/latest/scenarios\simple_web\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -300,6 +308,46 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Simple ToDo App
+      url: /en/latest/scenarios\simple_todo\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: ToDo With Users
+      url: /en/latest/scenarios\todo_users\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Amazon AWS and S3 Integration
+      url: /en/latest/scenarios\amazon\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Stripe Integration
+      url: /en/latest/scenarios\stripe\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: Mandrill
+      url: /en/latest/scenarios\mandrillapp\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
     - title: Mailgun
       url: /en/latest/scenarios\mailgun\index.html
       audience: writers, designers
@@ -308,8 +356,8 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Mandrillapp
-      url: /en/latest/scenarios\mandrillapp\index.html
+    - title: SendGrid
+      url: /en/latest/scenarios\send_grid\index.html
       audience: writers, designers
       platform: all
       product: all
@@ -332,32 +380,8 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Simple ToDo App
-      url: /en/latest/scenarios\simple_todo\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Simple Web App with REST API
-      url: /en/latest/scenarios\simple_web\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: Stripe Integration
-      url: /en/latest/scenarios\stripe\index.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-      type: frontmatter
-    - title: ToDo With Users
-      url: /en/latest/scenarios\todo_users\index.html
+    - title: Twilio
+      url: /en/latest/scenarios\twilio\index.html
       audience: writers, designers
       platform: all
       product: all

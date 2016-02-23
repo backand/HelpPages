@@ -1,5 +1,5 @@
 ---
-title: Mandrillapp
+title: Mandrill
 ---
 ## What is Mandrill?
 Mandrill is an email infrastructure service that focuses on transactional emails. Using Mandrill, you can send personalized e-commerce messages on a one-to-one basis, or automated transactional messages for things like password resets, order confirmations, and welcome messages.
@@ -21,7 +21,7 @@ function backandCallback(userInput, dbRow, parameters, userProfile) {
       method: "POST",
       url: "https://mandrillapp.com/api/1.0/messages/send.json",
       data: {"key":<enter your mandrill key>,
-            "message":{"html":parameter.message,
+            "message":{"html":parameters.message,
             "subject":"Example for Mandrill Integration",
             "from_email":userProfile.username,"from_name":parameters.name,
             "to":[{"email":userProfile.username,"name":parameters.name,"type":"to"}],
