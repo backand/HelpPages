@@ -176,7 +176,7 @@ The following sub-query retrieves the department ID of each department in New Yo
 Using this sub-query, we can now test a new field - dept_id - with respect to the results of the sub-query. We simply 
 use the '$in' operator, and the query, as follows:
 
-``JSON
+```JSON
 { 
     "dept_id": { 
         "$in": {  
@@ -238,7 +238,7 @@ If we wanted to look at a more complex query, we could modify this a bit. Let's 
 Formally, a condition on a field is a key-value expression of the form: 
 
 ```     
-  Key : ValueExpression
+  { Key : ValueExpression }
 ```
 
 Where the fields are defined as follows:
@@ -253,8 +253,8 @@ Where the fields are defined as follows:
 
 Negation may sometimes be swapped for comparison. For example, to test if the location field is not equal to Paris, we can use negation as follows:
 
-```
-    { $not: { location : "Paris" } }
+```JSON
+  { $not: { location : "Paris" } }
 ```
 
 Or we can also use a not-equal  operator: 
@@ -300,7 +300,7 @@ The algorithm transforms from JSON to SQL using a top-down transformation.
 ### Usage
 
 ```
-    transformJson(json, sqlSchema, isFilter, callback)
+  transformJson(json, sqlSchema, isFilter, callback)
 ```     
 
 The parameters are:
@@ -312,7 +312,7 @@ The parameters are:
 
 The result is a structure with the following fields:
 
-```
+```JSON
 {
     str: <SQL statement for query>,
     select: <select clause>,
