@@ -396,3 +396,19 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Netmera
+      url: /en/latest/scenarios\netmera\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title: PushWoosh
+      url: /en/latest/scenarios\pushwoosh\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
