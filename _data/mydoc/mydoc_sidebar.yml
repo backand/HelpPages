@@ -268,6 +268,14 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Bulk operations
+      url: /en/latest/what_would_you_like_to_do\bulk\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
     - title: Continuous Deployment (CD) & Versions
       url: /en/latest/what_would_you_like_to_do\continuous_deployment\index.html
       audience: writers, designers
