@@ -1,5 +1,5 @@
 ---
-title: FB Messenger Bot
+title: Facebook Messenger Bot
 ---
 ## Creating your own Facebook Messenger Bot with Backand
 
