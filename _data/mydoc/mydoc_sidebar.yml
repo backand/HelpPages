@@ -420,3 +420,11 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: FB Messenger Bot
+      url: /en/latest/scenarios\fbmessengerbot\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
