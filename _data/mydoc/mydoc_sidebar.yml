@@ -92,6 +92,14 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Crons
+      url: /en/latest/getting_started\crons\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
     - title: Security & Auth
       url: /en/latest/getting_started\security_auth\index.html
       audience: writers, designers
