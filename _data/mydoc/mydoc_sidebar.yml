@@ -92,7 +92,7 @@ entries:
       version: all
       output: web
       type: frontmatter
-    - title: Crons
+    - title: Background Jobs
       url: /en/latest/getting_started\crons\index.html
       audience: writers, designers
       platform: all
