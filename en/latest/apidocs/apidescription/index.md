@@ -138,7 +138,7 @@ The parameters for the requestResetPassword call are:
           data: 
             {
               "appName": "string",
-              "userName": userNames
+              "username": userNames
             }
       })
   };
