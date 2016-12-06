@@ -1,7 +1,7 @@
 ---
 title: Retrieving data from Facebook
 ---
-## Retrieving data from Facebook
+## Retrieving data from Facebook using the Graph API
 
 To retrieve data from Facebook using the Graph API, get the Facebook user ID after the user signed up to your Backand app.
 Once you have the Facebook user ID, use the Facebook graph API to retrieve data or perform other actions.
