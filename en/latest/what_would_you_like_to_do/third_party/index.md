@@ -1,6 +1,3 @@
----
-title: Integrating with Third Parties
----
 ##Leveraging the Work of Others
 
 Libraries have built the modern world. In a post originally on Google Plus, Steve Yegge detailed how it was [platform development](https://gist.github.com/chitchcock/1281611) that provided the basis for success of a lot of the major technology companies, using Amazon, Microsoft, and Facebook as examples. True platform-based development isn't possible without a mechanism to integrate with those platforms, though. Below we'll look at the options available to you when developing a Backand-backed web app, detailing which APIs work best at each stage of the application.

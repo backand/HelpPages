@@ -1,9 +1,6 @@
----
-title: Security Concepts
----
 ## Introduction
 
-The following section describes how to manage your app's users within Backand's user security paradigm. An important element to note up front is that, by default, [Backand](https://www.backand.com) provides two independent user objects. One user object is handled entirely by Backand, and is responsible for authentication and role-based security. The data for this user object is stored in Backand's database, and as such cannot partake of your app's custom logic. The second user object is offered in the default data model for a Backand application, and is titled "users". This object represents a user of your application, as opposed to a generic Backand user, and allows you to associate the user with various other objects in your application. Backand provides sync actions that allow you to keep these two user object lists up-to-date (see [Link your app's users with Backand's registered users](../security/index.html#Link your app's users with Backand's registered users) for more info). We highly recommend running the [todos-with-users app](https://github.com/backand/todos-with-users) in addition to reading this documentation. This simple app covers most of the user management use cases for a Backand application, such as allowing users to read all of your app's data but only allowing them to create and update their own objects, or restricting anonymous users to read-only access, or creating an Admin role that has full read-write-update-delete access to your application's objects.
+The following section describes how to manage your app's users within Backand's user security paradigm. An important element to note up front is that, by default, [Backand](https://www.backand.com) provides two independent user objects. One user object is handled entirely by Backand, and is responsible for authentication and role-based security. The data for this user object is stored in Backand's database, and as such cannot partake of your app's custom logic. The second user object is offered in the default data model for a Backand application, and is titled "users". This object represents a user of your application, as opposed to a generic Backand user, and allows you to associate the user with various other objects in your application. Backand provides sync actions that allow you to keep these two user object lists up-to-date (see [Link your app's users with Backand's registered users](security.md#Link your app's users with Backand's registered users) for more info). We highly recommend running the [todos-with-users app](https://github.com/backand/todos-with-users) in addition to reading this documentation. This simple app covers most of the user management use cases for a Backand application, such as allowing users to read all of your app's data but only allowing them to create and update their own objects, or restricting anonymous users to read-only access, or creating an Admin role that has full read-write-update-delete access to your application's objects.
 
 ## Authentication
 
@@ -77,8 +74,8 @@ curl https://api.backand.com/1/objects/items?AnonymousToken=<anonymous token>
 
 ## Sign Up
 
-Registering with [Backand](https://www.backand.com), and creating an application, automatically sets you as a user with an "Admin" role in your new project (see [roles](../security/index.html#roles) for more info). By default your application is marked public witch mean any user can register to your application.
-These users are assigned a default role 'User', which has full CRUD access to your app. You needs to be configured when you enable public usage of your app (see [roles](../security/index.html#roles) for more details).
+Registering with [Backand](https://www.backand.com), and creating an application, automatically sets you as a user with an "Admin" role in your new project (see [roles](security.md#roles) for more info). By default your application is marked public which mean any user can register to your application.
+These users are assigned a default role 'User', which has full CRUD access to your app. You needs to be configured when you enable public usage of your app (see [roles](security.md#roles) for more details).
 
 **Note**: For security reasons you cannot change the role from the sign-up API - this can only be accomplished either by having an admin change the appropriate settings on the Security & Auth -> Registered Users page, or by creating a custom server-side action 
 with Admin rights. Create new Security Action in Before Create trigger with the following code (this will update the 
@@ -167,14 +164,14 @@ If you have a users object in your model, Backand adds the following actions, wh
 
 ```
 function backandCallback(userInput, dbRow, parameters, userProfile) {
-    var validEmail = function(email) 
+	var validEmail = function(email) 
     {
-        var re = /\\S+@\\S+\\.\\S+/;
+        var re = /\S+@\S+\.\S+/;
         return re.test(email);
     }
     
     // write your code here
-    if (!userInput.email){
+	if (!userInput.email){
         throw new Error("Backand user must have an email.");
     }
     
@@ -194,15 +191,15 @@ function backandCallback(userInput, dbRow, parameters, userProfile) {
 
 ```
 function backandCallback(userInput, dbRow, parameters, userProfile) {
-    
-    var randomPassword = function(length){
-        if (!length) length = 10;
-        return Math.random().toString(36).slice(-length);
-    }
+	
+	var randomPassword = function(length){
+	    if (!length) length = 10;
+	    return Math.random().toString(36).slice(-length);
+	}
     if (!parameters.password){
         parameters.password = randomPassword();
     }
-    
+	
     var backandUser = {
         password: parameters.password,
         confirmPassword: parameters.password,
@@ -213,7 +210,7 @@ function backandCallback(userInput, dbRow, parameters, userProfile) {
     
     // uncomment if you want to debug debug
     //console.log(parameters);
-    
+	
     var x = $http({method:"POST",url:CONSTS.apiUrl + "1/user" ,data:backandUser, headers: {"Authorization":userProfile.token, "AppName":userProfile.app}});
 
     // uncomment if you want to return the password and sign in as this user

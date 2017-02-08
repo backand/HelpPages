@@ -1,6 +1,3 @@
----
-title: Realtime Database Communication
----
 ### Introduction
 Backand's real-time communication functionality is based on the popular open-source Socket.io framework, which lets you add real-time functionality to your application. Backand’s Real-Time Database Communication sends events and JSON-formatted data to any authorized connected client. With Real-Time Communication from Backand, you can send real-time information to your application based on server-side logic in your application's custom actions. With this new feature events are picked up as they happen, rather than having to wait for a user-driven event to trigger a data reload.
 
@@ -9,12 +6,13 @@ Backand’s real-time database communications are completely secure. They provid
 Using the real-time capability can enhance your app with instant updates to any Angular page, including updating charts, counters, logs, and other data-driven elements.
 ###Setup
 
-1. Upgrade to Backand SDK 1.8.2 or above.
-2. Include the following script in the index.html page:
+1. Upgrade to Backand SDK 1.9.5 or above.
+2. Include the Backand SDK in your index.html file:
 
   ```
-<!-- Backand Real-time -->
-  <script src="https://api.backand.com:4000/socket.io/socket.io.js"></script>
+<!-- Backand SDK -->
+<script src="//cdn.backand.net/vanilla-sdk/1.0.9/backand.js"></script>
+<script src="//cdn.backand.net/angular1-sdk/1.9.5/backand.provider.js"></script>            
   ```
 
 3. Update Angular configuration section with:

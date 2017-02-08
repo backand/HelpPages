@@ -1,6 +1,3 @@
----
-title: REST API Playground
----
 ##Introduction
 Once your web application's data has been imported and configured, the next step is working with your data. Backand, using your underlying database structure as a key, builds a RESTful API in front of your database, allowing for full programmatic access to each of the HTTP verbs that you would want to use to interact with your server objects. Below we'll cover the concepts behind REST, and how Backand makes creating and testing a RESTful interface simple.
 

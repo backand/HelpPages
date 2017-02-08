@@ -1,6 +1,3 @@
----
-title: Netmera
----
 ## Push Notification Integration in Android with Netmera
 Netmera is a cloud based service that can be used to send Push Notifications to various platforms, among other services such as Exception reporting. It offers a friendly site where campaigns ()push notifications) can be managed and customized and a REST API to send push notifications automatically. In this guide you can find out how to get started on Netmera and send push notifications with Backand.
 ## Get Started with Netmera
@@ -26,7 +23,7 @@ return $http ({
       name: 'SendPushNotification',
       parameters: {
         notificationTitle: 'My First Push Notification',
-        notificationContent: 'Hello! This is my first notification!'
+	    notificationContent: 'Hello! This is my first notification!'
       }
     }
 });

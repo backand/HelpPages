@@ -1,6 +1,3 @@
----
-title: NOSQL Query Language
----
 ##Introduction
 This query language is inspired by [MongoDB](https://www.mongodb.com/).
 

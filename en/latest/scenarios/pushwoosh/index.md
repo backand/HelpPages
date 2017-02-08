@@ -1,6 +1,3 @@
----
-title: PushWoosh
----
 ## Push Notification Integration in Android with PushWoosh
 Pushwoosh is a cloud based service that can be used to send Push Notifications to various platforms. It offers a friendly site where push notifications can be sent and customized and an API to send push notifications automatically. In this guide you can find out how to get started on PushWoosh with an example app for Android and send push notifications with Backand.
 ## Get Started with PushWoosh

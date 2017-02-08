@@ -1,6 +1,3 @@
----
-title: Hosting
----
 ## Hosting & Deployment
 Backand offers high-performance, reliable, and secure hosting for AngularJS applications through the hosting and deployment tool. Built off of AWS, Backand Hosting gives you an effortless way to deploy your Angular project to a hosted server.
 

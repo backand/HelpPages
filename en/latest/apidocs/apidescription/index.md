@@ -1,6 +1,3 @@
----
-title: API Description
----
 ## Security & Authentication
 
 Backand provides role-based security that allows you to determine specific permissions for each group of users. Backand uses [OAuth2](http://oauth.net/2/) authentication to identify users. Backand's implementation of OAuth2 authentication requires you to send the username, password, and appname (application name). In response, you receive an authentication token that must be supplied for all further communication with Backand.
@@ -418,7 +415,7 @@ DELETE to '/objects/{name}/{id}' to remove an item:
 
 ## Custom Actions
 
-[Custom actions](../customactions/index.html) can be called by sending a GET request to '/objects/action/{objectName}/{id}' The 
+[Custom actions](customactions.md) can be called by sending a GET request to '/objects/action/{objectName}/{id}' The 
 custom action is associated with an object list in order to simplify security configuration. It can also be associated with a specific object id, which is used as an input to the action, but this is optional. You can also define additional parameters in the request, which are passed through to the function. The action returns a custom JSON response.
 
 * **actionName** - The custom action name.
@@ -436,7 +433,7 @@ self.callAction = function (objectName, id, actionName, parameters) {
   };
 ```
 
-**Note**: You can find a configuration and testing environment for each of the [custom actions](../customactions/index.html) in the right side menu for your application on an object's Actions tab. 
+**Note**: You can find a configuration and testing environment for each of the [custom actions](customactions.md) in the right side menu for your application on an object's Actions tab. 
 
 ## Queries
 

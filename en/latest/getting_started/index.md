@@ -1,6 +1,3 @@
----
-title: Introduction
----
 Backand's REST API allows you to fully access and manipulate the backend data for your system, giving you full access to the underlying database and related functionality from any program that can send an HTTP request. While we start by wrapping your database in a true RESTful API Interface, we also give you a lot of extras that you can build into your app:
 
 * You can define and execute custom queries that are triggered by a call to a URL

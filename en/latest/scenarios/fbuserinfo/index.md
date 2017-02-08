@@ -1,6 +1,3 @@
----
-title: Retrieving data from Facebook
----
 ## Retrieving data from Facebook using the Graph API
 
 To retrieve data from Facebook using the Graph API, get the Facebook user ID after the user signed up to your Backand app.
@@ -31,8 +28,8 @@ Once you have the Facebook user ID, use the Graph API to access any available Fa
 1. For example, to get a user's friends use the following JavaScript action code:
 
 ```javascript
-    var fuid = "176102422846507";
-    var accessToken = "EAAWouLyM4lEBADjVlK9yslq9YNjx7S5UUx9oKUo6BWxsj9qc77ZCuKZAPvBQUIulpieNJIJ0Uit3K0UFR0oxjxl68DupTb0uoJFXPQFUdTOlneLEprG6b8WxuYN3AX6m05hKpFbBPKczCab1OUetevdvkZCO6rtPUQEUtc68gZDZD";
+	var fuid = "176102422846507";
+	var accessToken = "EAAWouLyM4lEBADjVlK9yslq9YNjx7S5UUx9oKUo6BWxsj9qc77ZCuKZAPvBQUIulpieNJIJ0Uit3K0UFR0oxjxl68DupTb0uoJFXPQFUdTOlneLEprG6b8WxuYN3AX6m05hKpFbBPKczCab1OUetevdvkZCO6rtPUQEUtc68gZDZD";
 
     var response = $http({
         method: "GET",

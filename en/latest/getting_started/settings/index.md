@@ -1,6 +1,3 @@
----
-title: Settings
----
 The Settings section covers the basic settings for your application.
 
 ## App

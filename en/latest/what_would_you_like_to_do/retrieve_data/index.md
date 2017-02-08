@@ -1,6 +1,3 @@
----
-title: Retrieving Data
----
 ## Deep vs. Lazy Load
 A Complex object is an object that has relationships to other objects in the database. For example, the default model provided when you create a new Backand application has two objects: users and items. There is a one-to-many relationship between users and items, meaning that a specific user may have many different related items. In this example, both users and items are complex objects. The relationship between the two tables, represented as the User object having a collection of Item objects, can be retrieved from the database by loading them through the object's API.
 

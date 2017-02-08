@@ -1,6 +1,3 @@
----
-title: Bulk operations
----
 ## Bulk Operations
 
 Backand's bulk operations endpoint can be used to operate on multiple items in a single request. The request has the following general form:

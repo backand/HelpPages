@@ -1,6 +1,3 @@
----
-title: Twilio
----
 ## What is Twilio?
 [Twilio](https://www.twilio.com) takes care of dealing with messy telecom hardware, exposing a globally available cloud API that developers can interact with to build intelligent and complex communications systems. As your app's usage scales up or down, Twilio automatically scales with you.
 
@@ -24,8 +21,8 @@ To send SMS with Twilio, you need to create a server side action. You can either
 */
 'use strict';
 function backandCallback(userInput, dbRow, parameters, userProfile) {
-    // write your code here
-    var ACCOUNT_SID = 'AC2933cadba659d1f15bd409333e3bc38b';
+	// write your code here
+	var ACCOUNT_SID = 'AC2933cadba659d1f15bd409333e3bc38b';
     var AUTH_TOKEN = 'e924350f6eefb5dd1ae011b49d5cb5dd';
 
     var FROM_PHONE_NUM = 'GetEat';

@@ -1,6 +1,3 @@
----
-title: SendGrid
----
 ## What is SendGrid?
 SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics.
 

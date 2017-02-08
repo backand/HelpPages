@@ -1,6 +1,3 @@
----
-title: Mailgun
----
 ## What is Mailgun?
 Mailgun is an email automation service provided by Rackspace. It offers a complete cloud-based email service for sending, receiving, and tracking email messages sent by your registered websites and applications.
 
@@ -16,35 +13,35 @@ To send an email with Mailgun, you need to create a server side action.You can e
 */
 'use strict';
 function backandCallback(userInput, dbRow, parameters, userProfile) {
-    // write your code here
-    
-    var apiBaseUrl = "https://api.mailgun.net/v3/sandbox<your mailgun sandbox key here>.mailgun.org/messages";
+	// write your code here
+	
+	var apiBaseUrl = "https://api.mailgun.net/v3/sandbox<your mailgun sandbox key here>.mailgun.org/messages";
 
     var apiKey = "api:<your mailgun key here>";
                   
     var encodedAuth = btoa(apiKey);
     //console.log(encodedAuth);
     
-        var response = $http(
-        {
-            method:"POST",
-            url: apiBaseUrl, 
-            headers: {
-                "Authorization": "Basic " + encodedAuth,
-                "Content-Type" : "multipart/form-data; charset=utf-8",
-            },
-            data: {
-                from: userProfile.username, 
-                to: userProfile.username, 
-                subject: 'testing mailgun with backand', 
-                text: parameters.message
-            }
-            
-        }
-    );
-    
+    	var response = $http(
+	    {
+	        method:"POST",
+	        url: apiBaseUrl, 
+	        headers: {
+	            "Authorization": "Basic " + encodedAuth,
+	            "Content-Type" : "multipart/form-data; charset=utf-8",
+	        },
+	        data: {
+	            from: userProfile.username, 
+	            to: userProfile.username, 
+	            subject: 'testing mailgun with backand', 
+	            text: parameters.message
+	        }
+	        
+	    }
+	);
+	
     console.log(response);
-    return {};
+	return {};
 }
 ```
 in this example the app user can send any message that he wants to himself. Please replace the "apiKey" property, as well as the sandbox URL, with your associated mailgun values.

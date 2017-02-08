@@ -1,6 +1,3 @@
----
-title: Rolebased Security Configuration
----
 ## Introduction
 One of the core concerns of any application that deals with sensitive user and business data is security. In this article we'll cover how Backand handles security for your application, covering the entire stack – from user registration to security templates. We'll also discuss anonymous access to your application, which can greatly enhance your application's adoption by the world at large. Backand takes your application's security seriously, and with the following we'll show you how we protect your data effectively.
 

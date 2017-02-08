@@ -1,6 +1,3 @@
----
-title: Continuous Deployment (CD) & Versions
----
 ## Introduction
 A common use case is separate development and production environments, often with several stages in between (testing, qa, staging), which allows phased deployment (rollout) and rollback in case of problems.The goal of Continuous Deployment is to enable a constant flow of changes from development to production.
 
