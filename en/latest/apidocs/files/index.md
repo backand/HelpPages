@@ -1,3 +1,6 @@
+---
+title: Backand Storage
+---
 ### Introduction
 Backand provides you with the ability to upload and delete files to and from Backand's robust storage. This is done on the server-side through Backand's Actions. It doesn't require any additional authentication and it is up to you to decide if and under what restrictions to expose this functionality to the client side. For example, you can restrict certain roles, handle the name of the files, associate the files with objects and manage counts of the amount of files per user. 
 
@@ -18,7 +21,7 @@ Both upload and delete are written in the same action and the method you use to 
 'use strict';
 function backandCallback(userInput, dbRow, parameters, userProfile) {
   console.log(userProfile); // gets the current user role and id that enables you to perform security restrictions
-	// upload file
+    // upload file
     if (request.method == "POST"){
         var url = files.upload(parameters.filename, parameters.filedata);
         return {"url": url};
@@ -28,7 +31,7 @@ function backandCallback(userInput, dbRow, parameters, userProfile) {
         files.delete(parameters.filename);
         return {};    
     }
-	
+    
 }
 ```
 

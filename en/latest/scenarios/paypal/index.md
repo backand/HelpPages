@@ -1,3 +1,6 @@
+---
+title: PayPal
+---
 ## Accepting Payments
 
 Once you've decided how you want to monetize your web app, you'll likely begin looking at ways to integrate your code with a vendor that will accept and process payments on your behalf. While this would be a daunting effort to perform in a custom-built environment, Backand's built-in security and stability help to ease many of the requirements that are imposed upon payment applications. Below we'll look at using a third-party vendor – [PayPal](http://www.paypal.com/) – to process payments, and examine how to integrate PayPal with a Backand application.

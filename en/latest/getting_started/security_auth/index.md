@@ -1,3 +1,6 @@
+---
+title: Security & Auth
+---
 The Security & Auth section allows you to modify the security settings for your application, setting both application-level and user-level security policies.
 
 ## Security configuration

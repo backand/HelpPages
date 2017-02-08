@@ -1,3 +1,6 @@
+---
+title: Geography Points
+---
 ## Introduction
 
 Backand lets you store geography points as fields as part of any object.

@@ -1,3 +1,6 @@
+---
+title: Internationalization
+---
 ## Multi language support
 
 Supporting multiple languages often requires supporting multi-byte character sets. In order to allow for wider international character sets, you will need to run the following MySQL command against your database:

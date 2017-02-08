@@ -1,3 +1,6 @@
+---
+title: Ionic with Backand
+---
 Today many AngularJS developers are using Ionic to build the user interface for their mobile apps.  AngularJS provides the app structure.  But these mobile apps still need a backend.  In this blog we’ll give you the recipe you need to build an Ionic mobile app with Backand’s Backend as a Service (BaaS). Review the working demo [here](https://github.com/backand/simple-rest-ionic).
 
 ## What is Ionic?

@@ -1,3 +1,6 @@
+---
+title: Introduction
+---
 This section contains documentation on the features offered by Backand. We will cover the following functional areas:
 
 * Security and Authentication - a summary of the security features offered by Backand

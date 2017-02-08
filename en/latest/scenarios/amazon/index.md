@@ -1,3 +1,6 @@
+---
+title: Amazon AWS and S3 Integration
+---
 ### Expanding Available Functionality
 
 Amazon Web Services, or AWS, offer a lot of useful functionality for web developers. From hosting, to distributed computing, to even simple data storage, Amazon has backed many of the web's largest websites since its inception. Below we'll look at Amazon S3, and how we can integrate the data storage service into a Backand-powered application.

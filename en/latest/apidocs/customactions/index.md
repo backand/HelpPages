@@ -1,3 +1,6 @@
+---
+title: Custom Actions
+---
 ## Introduction
 In Backand's system, you can create server-side activity called Actions. These actions can be used for the purpose of security, integration, performance, notification and data integrity, among others, providing you with more flexibility in your app's design. There are two types of Actions that can be created. The first are initiated via a direct web request. These are known as "On Demand" actions. Additionally, you can create automated actions that take place based upon a data interaction event. These automated actions can occur whenever you create, update, or delete an item in your system. On Demand actions are associated with a specific object, and can be found on the Object --> {name} page in the Actions tab. The automated Create, Update and Delete actions are associated with a specific object that is compatible with a specific row in a table, while On Demand actions make association with a specific role optional.
 
@@ -37,26 +40,26 @@ In addition to the above parameters, you can also make use of the following glob
 function it always runs in sync). [See the full API description for more details](http://docs.backand.com/en/latest/apidocs/apidescription/index.html#rest-api-crud-operations):
     * GET example: 
 
-			var response = $http({method:"GET",url:CONSTS.apiUrl + "/1/objects/objectexample", 
-			                       params:{filter:[{fieldName:"fieldexample", operator:"contains", value:"somestring"}]}, 
-			                      headers: {"Authorization":userProfile.token}});
+            var response = $http({method:"GET",url:CONSTS.apiUrl + "/1/objects/objectexample", 
+                                   params:{filter:[{fieldName:"fieldexample", operator:"contains", value:"somestring"}]}, 
+                                  headers: {"Authorization":userProfile.token}});
 
     * POST example: 
     
-			var response = $http({method:"POST",url:CONSTS.apiUrl + "/1/objects/objectexample", 
-			                      data:{fieldexample1:"somevalue",fieldexample2:"somevalue"}, 
-			                      headers: {"Authorization":userProfile.token}});
+            var response = $http({method:"POST",url:CONSTS.apiUrl + "/1/objects/objectexample", 
+                                  data:{fieldexample1:"somevalue",fieldexample2:"somevalue"}, 
+                                  headers: {"Authorization":userProfile.token}});
 
     * PUT example: 
     
-			var response = $http({method:"PUT",url:CONSTS.apiUrl + "/1/objects/objectexample/5", 
-			                      data:{fieldexample1:"somevalue",fieldexample2:"somevalue"}, 
-			                      headers: {"Authorization":userProfile.token}});
+            var response = $http({method:"PUT",url:CONSTS.apiUrl + "/1/objects/objectexample/5", 
+                                  data:{fieldexample1:"somevalue",fieldexample2:"somevalue"}, 
+                                  headers: {"Authorization":userProfile.token}});
 
     * DELETE example: 
 
-			var response = $http({method:"DELETE",url:CONSTS.apiUrl + "/1/objects/objectexample/5", fieldexample2:"somevalue"}, 
-			                      headers: {"Authorization":userProfile.token}});
+            var response = $http({method:"DELETE",url:CONSTS.apiUrl + "/1/objects/objectexample/5", fieldexample2:"somevalue"}, 
+                                  headers: {"Authorization":userProfile.token}});
 
 -- A Note About The Authorization Header:  
 Sending the authorization header to the $http function is optional. When you make a $http request with an authorization header and the value of the userProfile.token (as in the examples above), the request will run in the context of the current user and with his assigned role. Alternatively, if you choose not to send an authorization header, the action will run in the context of an admin role. Send the authorization header with the request if you are going to use information about the current user in the action, otherwise you do not need to do so.
@@ -127,11 +130,11 @@ To initialize the node.js code for the action on your local machine, use the fol
 ```
 
 The parameters for this call are:
-  **--app**:		  The current app name  
-  **--object**:		The object that the action belongs to  
-  **--action**:		The action name  
-  **--master**:		The master token of the app (obtained from the Social & Keys section of the app's Security & Auth configuration)  
-  **--user**:		  The token of the current user (available from the TEam section of the app's Security & Auth configuration - simply click on key icon next to an authorized user)  
+  **--app**:          The current app name  
+  **--object**:        The object that the action belongs to  
+  **--action**:        The action name  
+  **--master**:        The master token of the app (obtained from the Social & Keys section of the app's Security & Auth configuration)  
+  **--user**:          The token of the current user (available from the TEam section of the app's Security & Auth configuration - simply click on key icon next to an authorized user)  
 
 
 ### Deploy action
@@ -143,9 +146,9 @@ To deploy your local Node.js code to Back&, use the following command on the com
 ```
 
 The parameters for this call are:
-  **--app**:		  The current app name  
-  **--object**:		The object that the action belongs to  
-  **--action**:		The action name  
+  **--app**:          The current app name  
+  **--object**:        The object that the action belongs to  
+  **--action**:        The action name  
   **--master**:   The master token of the app (obtained from the Social & Keys section of the app's Security & Auth configuration)  
   **--user**:     The token of the current user (available from the TEam section of the app's Security & Auth configuration - simply click on key icon next to an authorized user)  
   **--folder**:   (Optional) The folder to deploy. By default the deployment occurs in the current folder

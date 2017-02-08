@@ -1,3 +1,6 @@
+---
+title: Angular/Ionic 1 SDK
+---
 ## Overview
 
 This is the documentation for Back&'s Angular 1 SDK. This SDK enables you to communicate comfortably and quickly with your Backand app.

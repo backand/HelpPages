@@ -1,3 +1,6 @@
+---
+title: Quick Reference
+---
 Here are a few basic usage guidelines for quickly accessing your application's data:
 
 ## API Endpoints

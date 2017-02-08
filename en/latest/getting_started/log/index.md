@@ -1,3 +1,6 @@
+---
+title: Log
+---
 The Log section stores various types of activity logs for your application.
 
 ## Configuration

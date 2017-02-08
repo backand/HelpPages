@@ -1,3 +1,6 @@
+---
+title: Custom Actions
+---
 ## Introduction
 Actions are a powerful tool that allow you to perform customized tasks when a number of different types of events occur within your application. They provide a great alternative to server-side custom code, and can add a lot of flexibility to how your application interacts with outside services. Below we're going to look at the types of actions that Backand offers application developers, and how they can easily be used.
 

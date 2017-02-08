@@ -1,3 +1,6 @@
+---
+title: Queries
+---
 
 Queries are custom database queries, written in SQL, that you can later hit through a specific endpoint (see Quick Reference for details on the URL format).
 

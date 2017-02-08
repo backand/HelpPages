@@ -1,3 +1,6 @@
+---
+title: Realtime Database Communication
+---
 ### Introduction
 Backand's real-time communication functionality is based on the popular open-source Socket.io framework, which lets you add real-time functionality to your application. Backand’s Real-Time Database Communication sends events and JSON-formatted data to any authorized connected client. With Real-Time Communication from Backand, you can send real-time information to your application based on server-side logic in your application's custom actions. With this new feature events are picked up as they happen, rather than having to wait for a user-driven event to trigger a data reload.
 

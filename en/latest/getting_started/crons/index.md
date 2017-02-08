@@ -1,3 +1,6 @@
+---
+title: Background Jobs
+---
 Background jobs (also known as cron jobs) allow you to run an action, query, or external URL request on a schedule that you define. Simply set the time and frequency, and the desired task will be executed automatically by Backand's servers. With this mechanism, you can run periodic queries for things like reports, recurring actions to control your application's behavior, or regularly post to external services.
 
 ## Create a job

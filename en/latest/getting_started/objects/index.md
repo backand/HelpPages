@@ -1,3 +1,6 @@
+---
+title: Objects
+---
 The "Objects" section of the dashboard allows you to modify the specific objects in your application's database. A menu entry is created for each table in your database, and allows you to configure your application at the object level. For each object in your system, you are given access to the following areas to modify and work with.
 
 ## Model
@@ -161,7 +164,7 @@ In 'pets':
 ```
 
 ###Many-to-Many Relationship
-Many-to-Many relationships between objects are added by adding a new object that has a one-to-many relationship with each object participating in the many-to-many relation. Please review [One-to-many relationship](index.md#one-to-many-relationship) before continuing with this section.
+Many-to-Many relationships between objects are added by adding a new object that has a one-to-many relationship with each object participating in the many-to-many relation. Please review [One-to-many relationship](../index/index.html#one-to-many-relationship) before continuing with this section.
 
 Say, for example, that we have a many to many relationship between objects R and S. This means that for many rows in R, there are many potentially corresponding rows in S.
 
