@@ -13,7 +13,8 @@ var srcPattern = 'source/docs/{,*/}{,*/}*.md';
 var mkdocsPath = 'source/mkdocs.yml';
 
 function extracteIntrestingPart(file) {
-    return file.path.substr(file.path.indexOf('docs') + ('docs'.length + 1)).toLowerCase();
+    var fileKey = file.path.substr(file.path.lastIndexOf('\\docs\\') + ('\\docs\\'.length )).toLowerCase();
+    return fileKey;
 }
 gulp.task('default', function () {
 
@@ -21,13 +22,13 @@ gulp.task('default', function () {
     gulp.src(srcPattern)
         .pipe(modify({
             fileModifier: function (file, contents) {
-                console.log(file.path);
+                console.log( "modifying: " +file.path);
                 // #1 add title to every page
                 interestinPathPart = extracteIntrestingPart(file);
                 pagesDetail = pages[interestinPathPart];
-
+                //console.log(pagesDetail);
                 if (pagesDetail !== undefined) {
-
+                   
                     title = pagesDetail.title;
                     header = "---\n" + "title: " + title + "\n---\n"
                     //console.log(file);
