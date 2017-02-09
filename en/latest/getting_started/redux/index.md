@@ -1,5 +1,5 @@
 ---
-title: Redux\React SDK
+title: Redux  React SDK
 ---
 ## Overview
 

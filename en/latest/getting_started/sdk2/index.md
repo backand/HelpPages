@@ -1,5 +1,5 @@
 ---
-title: Angular\Ionic 2 SDK
+title: Angular  Ionic 2 SDK
 ---
 ## Overview
 
