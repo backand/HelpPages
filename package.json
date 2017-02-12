@@ -9,7 +9,8 @@
     "gulp": "^3.9.0",
     "gulp-file": "^0.2.0",
     "gulp-foreach": "^0.1.0",
-    "gulp-modify": "^0.1.1"
+    "gulp-modify": "^0.1.1",
+    "simple-jekyll-search":"^1.1.6"
   },
   "devDependencies": {},
   "scripts": {
