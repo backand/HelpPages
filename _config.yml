@@ -35,7 +35,7 @@ exclude:
 host: 127.0.0.1
 feedback_email: ygalbel@backand.com
 
-markdown: redcarpet
+markdown: kramdown
 
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
