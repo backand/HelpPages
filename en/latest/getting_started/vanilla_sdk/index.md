@@ -1,5 +1,5 @@
 ---
-title: Core SDK
+title: Vanilla SDK
 ---
 ## Overview
 
