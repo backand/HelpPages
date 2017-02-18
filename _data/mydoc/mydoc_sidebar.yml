@@ -332,6 +332,14 @@ entries:
       version: all
       output: web
       type: frontmatter
+    - title: Integrating with Ionic Creator
+      url: /en/latest/what_would_you_like_to_do\ionic_creator\index.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
 
   - title: Scenarios
     audience: writers, designers
